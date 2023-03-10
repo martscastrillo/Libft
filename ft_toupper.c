@@ -6,11 +6,10 @@
 /*   By: martcast <martcast@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/09 16:54:40 by martcast          #+#    #+#             */
-/*   Updated: 2023/03/09 16:57:19 by martcast         ###   ########.fr       */
+/*   Updated: 2023/03/10 16:18:50 by martcast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ctype.h>
 int	ft_toupper(int c)
 {
 	if ((c >= 97 && c <= 122))

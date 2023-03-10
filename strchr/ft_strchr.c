@@ -10,26 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
      #include <string.h>
-
-
-
 char *ft_strchr(const char *s, int c)
 {
-	int	i;
-	int	j;
-
-	i = 0;
-	j = 0;
-	if (c == '\0')
-		return (*s);
-	while (s[i] != '\0')
-	{
-		while (s[i + j] == c && s[i + j] != '\0')
-			j ++;
-		if (c == '\0')
-			return (s[i]);
-		i ++;
-		j = 0;
-	}
-	return (0);
+	
 }

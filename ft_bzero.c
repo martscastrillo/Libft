@@ -1,27 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: martcast <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/02/14 22:34:14 by martcast          #+#    #+#             */
-/*   Updated: 2023/03/09 16:06:54 by martcast         ###   ########.fr       */
+/*   Created: 2023/02/14 22:33:46 by martcast          #+#    #+#             */
+/*   Updated: 2023/03/09 16:38:01 by martcast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stdio.h>
 #include <string.h>
-   #include <strings.h>
-void *ft_bzero(void *s, size_t n);
-int main () {
- char str[] = "This is string.h library function";
+void *ft_bzero(void *s, size_t n)
+ {
+unsigned char	*str;
 
+	size_t			i;
 
-bzero(str, 3);
-printf("%s\n", str);
-/*  char str2[] = "This is string.h library function";
-ft_bzero(str2, 7);
-printf("%s\n", str2); */
-   
-   return(0);
-}
+	str = (unsigned char *)s;
+
+		i = 0;
+	while (i < n)
+	{
+		str[i] = '\0';
+        i++;
+	}
+	return (str);
+	
+ }

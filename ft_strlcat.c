@@ -6,7 +6,7 @@
 /*   By: martcast <martcast@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/09 11:05:43 by martcast          #+#    #+#             */
-/*   Updated: 2023/03/09 13:29:30 by martcast         ###   ########.fr       */
+/*   Updated: 2023/03/10 16:22:33 by martcast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 unsigned int	ft_strlen(char *str)
@@ -21,7 +21,8 @@ unsigned int	ft_strlen(char *str)
 	return (i);
 }
 
-size_t	ft_strlcat(char * restrict dst, const char * restrict src, size_t dstsize)
+size_t	ft_strlcat(char *restrict dst,
+		const char *restrict src, size_t dstsize)
 {
 	unsigned int	i;
 	unsigned int	d_len;
@@ -40,4 +41,3 @@ size_t	ft_strlcat(char * restrict dst, const char * restrict src, size_t dstsize
 	dest[i] = '\0';
 	return (d_len + s_len);
 }
-

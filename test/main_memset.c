@@ -19,7 +19,7 @@ int main () {
 memset(str,'$',7);
 printf("%s\n", str);
  char str2[] = "This is string.h library function";
-memset(str2,'$',7);
+ft_memset(str2,'$',7);
 printf("%s\n", str2);
    
    return(0);

@@ -1,29 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: martcast <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: martcast <martcast@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/02/14 22:33:46 by martcast          #+#    #+#             */
-/*   Updated: 2023/03/09 16:38:01 by martcast         ###   ########.fr       */
+/*   Created: 2023/03/10 16:23:02 by martcast          #+#    #+#             */
+/*   Updated: 2023/03/10 16:28:43 by martcast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-     #include <string.h>
- void *ft_memset(void *b, int c, size_t len)
- {
-	unsigned char * str;
+
+#include <string.h>
+
+void	*ft_memset(void *b, int c, size_t len)
+{
+	unsigned char	*str;
+	unsigned char	a;
+	size_t			i;
+
 	str = (unsigned char *)b;
-	unsigned char a;
 	a = (unsigned char)c;
-	size_t i;
 	i = 0;
-	while (i > len)
+	while (i < len)
 	{
 		str[i] = a;
+		i++;
 	}
 	return (str);
- }
-
-
-
+}
