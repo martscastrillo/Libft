@@ -10,15 +10,30 @@
 /*                                                                            */
 /* ************************************************************************** */
 #include <string.h>
-char *ft_strchr(const char *s, int c)
+
+char *ft_strrchr(const char *s, int c)
 {    
    	char	charcpy;
 	charcpy = (char) c;
 	int i;
+	int save;
+	int reset;
+	
 	i = 0;
-	while (s[i]  && s[i] != charcpy)
+	while (s[i] !='\0')
+	{	
+		if (s[i] == charcpy)
+		{
+			save = i;
+		}	
 		s++;
-	if (s[i] == charcpy)
+	}
+	reset = save;
+	while (s[reset] != '\0')
+	{
 		return ((char *) s);
+		reset++;
+	} 	
+
 	return (NULL);
-}
+}	
