@@ -1,22 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: martcast <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: martcast <martcast@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/02/14 22:33:46 by martcast          #+#    #+#             */
-/*   Updated: 2023/03/09 16:38:01 by martcast         ###   ########.fr       */
+/*   Created: 2023/03/13 18:54:15 by martcast          #+#    #+#             */
+/*   Updated: 2023/03/13 18:56:35 by martcast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include <string.h>
-char *ft_strchr(const char *s, int c)
-{    
-   	char	charcpy;
+
+char	*ft_strchr(const char *s, int c)
+{
+	char	charcpy;
+	int		i;
+
 	charcpy = (char) c;
-	int i;
 	i = 0;
-	while (s[i]  && s[i] != charcpy)
+	while (s[i] && s[i] != charcpy)
 		s++;
 	if (s[i] == charcpy)
 		return ((char *) s);

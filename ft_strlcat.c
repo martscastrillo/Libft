@@ -9,17 +9,7 @@
 /*   Updated: 2023/03/10 16:22:33 by martcast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-unsigned int	ft_strlen(char *str)
-{
-	unsigned int	i;
-
-	i = 0;
-	while (str[i] != '\0')
-	{
-		i++;
-	}
-	return (i);
-}
+#include "libft.h"
 
 size_t	ft_strlcat(char *restrict dst,
 		const char *restrict src, size_t dstsize)
@@ -29,15 +19,15 @@ size_t	ft_strlcat(char *restrict dst,
 	unsigned int	s_len;
 
 	s_len = ft_strlen(src);
-	d_len = ft_strlen(dest);
+	d_len = ft_strlen(dst);
 	i = d_len;
-	if (size <= d_len)
-		return (ft_strlen(src) + size);
-	while (i < size - 1 && *src)
+	if (dstsize <= d_len)
+		return (ft_strlen(src) + dstsize);
+	while (i < dstsize - 1 && *src)
 	{
-		dest[i++] = *src;
+		dst[i++] = *src;
 		src++;
 	}
-	dest[i] = '\0';
+	dst[i] = '\0';
 	return (d_len + s_len);
 }

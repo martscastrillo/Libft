@@ -31,9 +31,9 @@ char *ft_strrchr(const char *s, int c)
 	reset = save;
 	while (s[reset] != '\0')
 	{
-		return ((char *) s);
+		
 		reset++;
 	} 	
-
-	return (NULL);
+	return ((char *) s);
+	
 }	
