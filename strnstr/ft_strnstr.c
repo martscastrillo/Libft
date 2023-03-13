@@ -1,27 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: martcast <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: martcast <martcast@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/02/14 22:33:46 by martcast          #+#    #+#             */
-/*   Updated: 2023/03/13 18:53:47 by martcast         ###   ########.fr       */
+/*   Created: 2023/03/13 21:22:45 by martcast          #+#    #+#             */
+/*   Updated: 2023/03/13 21:23:22 by martcast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include <string.h>
-
-void	*ft_bzero(void *s, size_t n)
+char *ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
-	unsigned char	*str;
-	size_t			i;
+	size_t i;
+	size_t j;
 
-	str = (unsigned char *)s;
-	i = 0;
-	while (i < n)
-	{
-		str[i] = '\0';
-			i++;
+	i=0;
+	while (haystack[i] && i<len)
+	{	
+		if(haystack[i] == needle[i])
+		{
+			j=0;
+			while
+		}
+		i++;
 	}
-	return (str);
 }
+

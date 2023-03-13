@@ -10,30 +10,27 @@
 /*                                                                            */
 /* ************************************************************************** */
 #include <string.h>
+#include "libft.h"
+
 
 char *ft_strrchr(const char *s, int c)
 {    
    	char	charcpy;
+	int		i;
+	int		len;
+	char *ss;
+
+	ss = (char *)s;
+	len = ft_strlen(s);
 	charcpy = (char) c;
-	int i;
-	int save;
-	int reset;
-	
 	i = 0;
-	while (s[i] !='\0')
-	{	
-		if (s[i] == charcpy)
-		{
-			save = i;
-		}	
-		s++;
-	}
-	reset = save;
-	while (s[reset] != '\0')
+	while (len >= 0)
 	{
-		
-		reset++;
-	} 	
-	return ((char *) s);
+		if (s[len] == charcpy)
+			return (&ss[len]);
+		len--;
+	}
 	
-}	
+
+	return (NULL);
+}

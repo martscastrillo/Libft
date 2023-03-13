@@ -1,27 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: martcast <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: martcast <martcast@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/02/14 22:33:46 by martcast          #+#    #+#             */
-/*   Updated: 2023/03/13 18:53:47 by martcast         ###   ########.fr       */
+/*   Created: 2023/03/13 22:45:43 by martcast          #+#    #+#             */
+/*   Updated: 2023/03/13 22:45:45 by martcast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include <string.h>
 
-void	*ft_bzero(void *s, size_t n)
-{
-	unsigned char	*str;
-	size_t			i;
-
+void *memchr(const void *s, int c, size_t n)
+{	
+	unsigned char str;
+	unsigned char num;
 	str = (unsigned char *)s;
+	num = (unsigned char *)c;
+	size_t i;
 	i = 0;
-	while (i < n)
+	while(i<n)
 	{
-		str[i] = '\0';
-			i++;
+		if(*str == num)
+			return(str -1);
+		i--;
 	}
-	return (str);
+	return (NULL);
 }

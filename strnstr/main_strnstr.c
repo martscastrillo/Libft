@@ -1,31 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   main_strnstr.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: martcast <martcast@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/03/10 16:19:12 by martcast          #+#    #+#             */
-/*   Updated: 2023/03/13 21:00:37 by martcast         ###   ########.fr       */
+/*   Created: 2023/03/13 21:22:35 by martcast          #+#    #+#             */
+/*   Updated: 2023/03/13 21:22:38 by martcast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
-
-size_t	ft_strlcpy(char *restrict dst, const char *restrict src, size_t dstsize)
+ #include <string.h>
+#include <stdio.h>
+int main(void)
 {
-	size_t			len;
-	unsigned int	i;
+     const char *largestring = "Foo Bar Baz";
+           const char *smallstring = "Bar";
+           char *ptr;
 
-	i = 0;
-	len = ft_strlen(src);
-	if(dstsize == 0)
-		return (len);
-	while (src[i] != '\0' && i < dstsize -1)
-	{
-		dst[i] = src[i];
-		i ++;
-	}
-		dst[i] = '\0';
-	return (len);
+           ptr = strnstr(largestring, smallstring, 4);
+		   printf("%s", ptr);
+       return (0);
 }
