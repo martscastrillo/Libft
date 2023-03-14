@@ -20,7 +20,7 @@ void *memchr(const void *s, int c, size_t n)
 	num = (unsigned char *)c;
 	size_t i;
 	i = 0;
-	while(i<n)
+	while(n--)
 	{
 		if(*str == num)
 			return(str -1);

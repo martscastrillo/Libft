@@ -11,23 +11,25 @@
 /* ************************************************************************** */
 #include <stdio.h>
 #include <string.h> 
-/* void * ft_memchr(const void *s, int c, size_t n); */
-	
+ void * ft_memcpy(void *dst, const void *src, size_t n); 
+
 int main (void)
 {
-      char cadena[] = "Erase una vez...";
-   char *puntero; 
+  const char src[50] = "http://www.tutorialspoint.com";
+   char dest[50];
+   strcpy(dest,"Heloooo!!");
+   printf("Before memcpy dest = %s\n", dest);
+   memcpy(dest, src, 10);
+   printf("After memcpy dest = %s\n", dest);
+   
+   return(0);
 
-   puntero = (char *)memchr( cadena, 'a', 5 );
-   printf( "%s\n", cadena); 
-   printf( "%s\n", puntero ); 
- 
-/*    char cadena2[] = "Erase una vez...";
-   char *puntero2; 
+ const char src2[50] = "http://www.tutorialspoint.com";
+  const char dest2[50] = "Heloooo!!";
+   printf("Before memcpy dest = %s\n", dest2);
+   ft_memcpy(dest2, src2, 10);
+   printf("After memcpy dest = %s\n", dest2);
+   
 
-   puntero2 = (char *)ft_memchr( cadena2, 'a', 5 );
-   printf( "%s\n", cadena2); 
-   printf( "%s\n", puntero2 ); */
-      
-   return 0;
+
 }
