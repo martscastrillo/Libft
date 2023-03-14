@@ -9,7 +9,11 @@
 /*   Updated: 2023/03/13 20:35:53 by martcast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
+/* La función atoi() convierte una cadena de caracteres en un valor entero.
+La cadena de entrada es una secuencia de caracteres que se puede interpretar
+como un valor numérico del tipo de retorno especificado. La función deja de leer
+la cadena de entrada en el primer carácter que no puede reconocer como parte de
+un número. Este carácter puede ser el carácter nulo que finaliza la cadena. */
 int	ft_atoi(char *str)
 {
 	int	i;

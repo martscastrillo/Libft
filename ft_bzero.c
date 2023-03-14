@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: martcast <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -9,6 +9,9 @@
 /*   Updated: 2023/03/13 18:53:47 by martcast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+/* La función bzero() borra los datos en los n bytes de la memoria
+       comenzando en la ubicación señalada por s, escribiendo ceros (bytes
+       que contiene '\0') a esa área. */
 #include <string.h>
 
 void	*ft_bzero(void *s, size_t n)

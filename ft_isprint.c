@@ -9,6 +9,8 @@
 /*   Updated: 2023/03/13 20:26:44 by martcast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+/* La función isprint() comprueba si un carácter es un carácter imprimible o no.
+Aquellos caracteres que ocupan espacio de impresión se conocen como caracteres imprimibles. */
 int	ft_isprint(int c)
 {
 	if (c >= 32 && c < 127)
