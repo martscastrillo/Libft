@@ -6,29 +6,24 @@
 /*   By: martcast <martcast@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/15 09:51:26 by martcast          #+#    #+#             */
-/*   Updated: 2023/03/15 09:51:29 by martcast         ###   ########.fr       */
+/*   Updated: 2023/03/15 15:46:12 by martcast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-/* DESCRIPCIÓN
-     La función strchr() localiza la primera aparición de c (convertida en char) en la cadena a la que apunta s.
-	 El carácter nulo de terminación se considera parte del
-     cadena; por lo tanto, si c es '\0', las funciones ubican el '\0' final.
-
-     La función strrchr() localiza la última aparición de c.
-
-VALORES DEVUELTOS
-     La funciony strrchr() devuelve un puntero al carácter localizado o NULL si el carácter no aparece en la cadena. */
+/* DESCRIPCIÓN/
+ * La función strrchr() toma como argumento un string y un entero.
+ *  El entero c es el entero que debe localizar. Busca de atrás hacua delante.
+ * VALOR DEVUELTO
+ * Si no encuentra c, devuelve NULL, si lo encuentra, devuelve un puntero
+ * a la primera ocurrencia del carácter c en la cadena de caracteres s.*/
 #include <string.h>
 #include "libft.h"
 
-
-char *ft_strrchr(const char *s, int c)
-{    
-   	char	charcpy;
+char	*ft_strrchr(const char *s, int c)
+{
+	char	charcpy;
 	int		i;
 	int		len;
-	char *ss;
+	char	*ss;
 
 	ss = (char *)s;
 	len = ft_strlen(s);
@@ -40,7 +35,5 @@ char *ft_strrchr(const char *s, int c)
 			return (&ss[len]);
 		len--;
 	}
-	
-
 	return (NULL);
 }

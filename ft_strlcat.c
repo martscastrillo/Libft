@@ -6,13 +6,20 @@
 /*   By: martcast <martcast@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/09 11:05:43 by martcast          #+#    #+#             */
-/*   Updated: 2023/03/10 16:22:33 by martcast         ###   ########.fr       */
+/*   Updated: 2023/03/15 15:53:28 by martcast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-/* strlcat() agrega la cadena src al final de dst. Agregará como máximo dstsize - strlen (dst) - 1 caracteres. Luego terminará en NUL, a menos que dstsize sea 0 o el original
-     la cadena dst era más larga que dstsize (en la práctica, esto no debería suceder, ya que significa que dstsize es incorrecto o que dst no es una cadena adecuada).*/
- #include "libft.h"
-
+/* NON-SENSE
+* DESCRIPCIÓN/
+* La función strlcat() agrega una copia de la cadena s1 a s2 
+* (incluye el carácter nulo de terminación) al final de la cadena s1.
+* Es carácter inicial de s2 sobreescribe el carácter nulo existente al final de s1. 
+* Si la copia se lleva a cabo entre objetos que se superponen, el comportamiento queda
+* indefinido. 
+* VALOR DEVUELTO
+* Devuelve la sum de las longitudes de s1 y s2
+*/
+#include "libft.h"
 size_t	ft_strlcat(char * dst,
 		const char * src, size_t dstsize)
 {

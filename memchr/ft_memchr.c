@@ -20,9 +20,9 @@ void *memchr(const void *s, int c, size_t n)
 	num = (unsigned char *)c;
 	size_t i;
 	i = 0;
-	while(n--)
+	while(i < n)
 	{
-		if(*str == num)
+		if(str == num)
 			return(str -1);
 		i--;
 	}

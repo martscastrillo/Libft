@@ -11,18 +11,18 @@
 /* ************************************************************************** */
 #include <stdio.h>
 #include <string.h>
-char *ft_strchr(const char *s, int c);
-int main () {
+/* char *ft_strchr(const char *s, int c);
+ */int main () {
    const char str[] = "http://www.tutorialspoint.com";
-   const char ch = '.';
+   const char ch = '*';
    char *ret;
 
    ret = strchr(str, ch);
 
    printf("String after |%c| is - |%s|\n", ch, ret);
-   char *retro;
+   /* char *retro;
     retro = ft_strchr(str, ch);
     printf("String after |%c| is - |%s|\n", ch, retro);
-   
+    */
    return(0);
 }
