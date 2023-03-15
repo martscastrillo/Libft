@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: martcast <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: martcast <martcast@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/03/07 13:14:14 by martcast          #+#    #+#             */
-/*   Updated: 2023/03/09 12:00:13 by martcast         ###   ########.fr       */
+/*   Created: 2023/03/15 09:50:06 by martcast          #+#    #+#             */
+/*   Updated: 2023/03/15 09:50:13 by martcast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /* La función isascii() devuelve un valor distinto de cero si c, en la configuración

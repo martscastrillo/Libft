@@ -1,34 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: martcast <martcast@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/03/10 16:23:02 by martcast          #+#    #+#             */
-/*   Updated: 2023/03/10 16:28:43 by martcast         ###   ########.fr       */
+/*   Created: 2023/03/15 09:52:58 by martcast          #+#    #+#             */
+/*   Updated: 2023/03/15 09:53:58 by martcast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-/*  La función memset() rellena los primeros n bytes del área de memoria apuntada por s con el
-       byte constante c.
+/*DESCRIPCIÓN
+     La función memmove() copia len bytes de la cadena src a la cadena dst. Las dos cadenas pueden superponerse; la copia
+     siempre se realiza de forma no destructiva.
 
-VALOR DEVUELTO
-       La función memset() devuelve un puntero al área de memoria s. */
+VALORES DEVUELTOS
+     La función memmove() devuelve el valor original de dst.*/
 #include <string.h>
-
-void	*ft_memset(void *b, int c, size_t len)
+void *memmove(void *dst, const void *src, size_t len)
 {
-	unsigned char	*str;
-	unsigned char	a;
-	size_t			i;
-
-	str = (unsigned char *)b;
-	a = (unsigned char)c;
-	i = 0;
-	while (i < len)
-	{
-		str[i] = a;
-		i++;
-	}
-	return (str);
 }

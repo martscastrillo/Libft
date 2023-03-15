@@ -9,7 +9,9 @@
 /*   Updated: 2023/03/10 16:22:33 by martcast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "libft.h"
+/* strlcat() agrega la cadena src al final de dst. Agregará como máximo dstsize - strlen (dst) - 1 caracteres. Luego terminará en NUL, a menos que dstsize sea 0 o el original
+     la cadena dst era más larga que dstsize (en la práctica, esto no debería suceder, ya que significa que dstsize es incorrecto o que dst no es una cadena adecuada).*/
+ #include "libft.h"
 
 size_t	ft_strlcat(char * dst,
 		const char * src, size_t dstsize)

@@ -9,7 +9,8 @@
 /*   Updated: 2023/03/13 21:00:37 by martcast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
+/* La funcion strlcpy() copia y concatenn cadenas con los mismos parámetros
+de entrada y resultado de salida que snprintf(3). */
 #include "libft.h"
 
 size_t	ft_strlcpy(char * dst, const char * src, size_t dstsize)

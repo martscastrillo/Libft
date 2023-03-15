@@ -9,7 +9,9 @@
 /*   Updated: 2023/03/13 18:56:35 by martcast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
+/* La función strchr() devuelve un puntero a la primera ocurrencia del carácter c en la
+       cadena de caracteres s.Devuelve un puntero al elemento de la cadena con el
+       carácter coincidente, o NULL si el carácter no se ha encontrado. */
 #include <string.h>
 
 char	*ft_strchr(const char *s, int c)
