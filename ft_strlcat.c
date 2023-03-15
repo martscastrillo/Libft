@@ -17,7 +17,7 @@
 * Si la copia se lleva a cabo entre objetos que se superponen, el comportamiento queda
 * indefinido. 
 * VALOR DEVUELTO
-* Devuelve la sum de las longitudes de s1 y s2
+* Devuelve la sum de la longitud de s1 sumado a dstsize
 */
 #include "libft.h"
 size_t	ft_strlcat(char * dst,

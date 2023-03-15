@@ -11,23 +11,17 @@
 /* ************************************************************************** */
 #include <stdio.h>
 #include <string.h> 
-/* void * ft_memchr(const void *s, int c, size_t n); */
+void * ft_memchr(const void *s, int c, size_t n);
 	
 int main (void)
 {
-      char cadena[] = "Erase una vez...";
+   char cadena[] = "Erase una vez...";
    char *puntero; 
-
    puntero = (char *)memchr( cadena, 'a', 5 );
    printf( "%s\n", cadena); 
    printf( "%s\n", puntero ); 
- 
-/*    char cadena2[] = "Erase una vez...";
-   char *puntero2; 
-
-   puntero2 = (char *)ft_memchr( cadena2, 'a', 5 );
+   char cadena2[] = "Erase una vez...";   
    printf( "%s\n", cadena2); 
-   printf( "%s\n", puntero2 ); */
-      
+   printf( "%s\n", (char *)ft_memchr( cadena2, 'a', 5 ) );
    return 0;
 }
