@@ -6,14 +6,16 @@
 /*   By: martcast <martcast@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/10 16:23:02 by martcast          #+#    #+#             */
-/*   Updated: 2023/03/10 16:28:43 by martcast         ###   ########.fr       */
+/*   Updated: 2023/03/15 10:52:10 by martcast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-/*  La función memset() rellena los primeros n bytes del área de memoria apuntada por s con el
-       byte constante c.
-
-VALOR DEVUELTO
-       La función memset() devuelve un puntero al área de memoria s. */
+/* DESCRIPCIÓN
+ * La función memset() toma como argumentos un string, un valor c (convertido a 
+ * unsigned char) y una longitud len. Rellena los n primeros bytes del area 
+ * de s con la constante c.
+ * VALOR DEVUELTO
+ * La función memset() devuelve un puntero al área de memoria s. 
+ * El string modificado*/
 #include <string.h>
 
 void	*ft_memset(void *b, int c, size_t len)

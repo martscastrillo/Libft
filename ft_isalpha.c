@@ -3,15 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: martcast <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: martcast <martcast@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/03/07 13:14:14 by martcast          #+#    #+#             */
-/*   Updated: 2023/03/09 11:57:57 by martcast         ###   ########.fr       */
+/*   Created: 2023/03/15 10:13:09 by martcast          #+#    #+#             */
+/*   Updated: 2023/03/15 10:13:33 by martcast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-/* La función isalpha() comprueba si un carácter es un alfabeto
-(de la A a la Z y de la A a la Z) o no. Si un carácter pasado a isalpha()
-es un alfabeto, devuelve un número entero distinto de cero; si no, devuelve 0.*/
+/* DESCRIPCIÓN/
+ * La función isalpha() toma un único argumento en forma de número entero.
+ * VALOR DEVUELTO
+ * Devuelve 0 si no es parte del alfabeto y devuelve 1 si lo es.*/
 int	ft_isalpha(int c)
 {
 	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))

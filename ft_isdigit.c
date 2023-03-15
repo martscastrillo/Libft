@@ -6,13 +6,13 @@
 /*   By: martcast <martcast@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/09 12:00:40 by martcast          #+#    #+#             */
-/*   Updated: 2023/03/09 12:01:10 by martcast         ###   ########.fr       */
+/*   Updated: 2023/03/15 10:11:08 by martcast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-/* La función isdigit() toma un único argumento en forma de número entero
-y devuelve el valor de tipo int. Aunque isdigit() toma un número entero como
-argumento, el carácter se pasa a la función. Internamente, el carácter se convierte
-a su valor ASCII para la verificación. */
+/* DESCRIPCIÓN
+ * La función isdigit() toma un único argumento en forma de número entero.
+ * VALOR DEVUELTO
+ * Devuelve 0 si no es número y devuelve 1 si lo es.*/
 int	ft_isdigit(int c)
 {
 	if (c >= 48 && c <= 57)

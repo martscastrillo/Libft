@@ -6,12 +6,13 @@
 /*   By: martcast <martcast@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/15 09:50:06 by martcast          #+#    #+#             */
-/*   Updated: 2023/03/15 09:50:13 by martcast         ###   ########.fr       */
+/*   Updated: 2023/03/15 10:16:49 by martcast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-/* La función isascii() devuelve un valor distinto de cero si c, en la configuración
-regional actual, se puede representar como un carácter en el juego de caracteres
-US-ASCII de 7 bits. De lo contrario, devuelve 0. */
+/* DESCRIPCIÓN
+ * La función isascii() toma un único argumento en forma de número entero.
+ * VALOR DEVUELTO
+ * Devuelve 0 si no pertenece a la tabla ascii y devuelve 1 si si pertenece.*/
 int	ft_isascii(int c)
 {
 	if (c >= 0 && c <= 127)

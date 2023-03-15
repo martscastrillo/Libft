@@ -6,12 +6,15 @@
 /*   By: martcast <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/14 22:33:46 by martcast          #+#    #+#             */
-/*   Updated: 2023/03/13 18:53:47 by martcast         ###   ########.fr       */
+/*   Updated: 2023/03/15 10:53:34 by martcast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-/* La función bzero() borra los datos en los n bytes de la memoria
-       comenzando en la ubicación señalada por s, escribiendo ceros (bytes
-       que contiene '\0') a esa área. */
+/* DESCRIPCIÓN
+ * La función bzero() toma como argumentos un string, y una longitud n.
+ * Rellena los n primeros bytes del area de s con '\0'
+ * VALOR DEVUELTO
+ * La función bzero() devuelve un puntero al área de memoria s.
+ * El string modificado*/
 #include <string.h>
 
 void	*ft_bzero(void *s, size_t n)
