@@ -22,7 +22,7 @@ int main (void)
    memcpy(dest, src, 10);
    printf("After memcpy dest = %s\n", dest);
    
-   return(0);
+  
 
  const char src2[50] = "http://www.tutorialspoint.com";
   const char dest2[50] = "Heloooo!!";
@@ -30,6 +30,6 @@ int main (void)
    ft_memcpy(dest2, src2, 10);
    printf("After memcpy dest = %s\n", dest2);
    
-
+ return(0);
 
 }
