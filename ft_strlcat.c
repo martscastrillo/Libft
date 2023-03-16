@@ -6,22 +6,22 @@
 /*   By: martcast <martcast@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/09 11:05:43 by martcast          #+#    #+#             */
-/*   Updated: 2023/03/15 15:53:28 by martcast         ###   ########.fr       */
+/*   Updated: 2023/03/16 15:08:30 by martcast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /* NON-SENSE
 * DESCRIPCIÓN/
 * La función strlcat() agrega una copia de la cadena s1 a s2 
 * (incluye el carácter nulo de terminación) al final de la cadena s1.
-* Es carácter inicial de s2 sobreescribe el carácter nulo existente al final de s1. 
-* Si la copia se lleva a cabo entre objetos que se superponen, el comportamiento queda
-* indefinido. 
+* Es carácter inicial de s2 sobreescribe el carácter nulo existente al 
+* final de s1.Si la copia se lleva a cabo entre objetos que se superponen,
+* el comportamiento queda indefinido. 
 * VALOR DEVUELTO
-* Devuelve la sum de la longitud de s1 sumado a dstsize
-*/
+* Devuelve la sum de la longitud de s1 sumado a dstsize*/
 #include "libft.h"
-size_t	ft_strlcat(char * dst,
-		const char * src, size_t dstsize)
+
+size_t	ft_strlcat(char *dst,
+		const char *src, size_t dstsize)
 {
 	unsigned int	i;
 	unsigned int	d_len;

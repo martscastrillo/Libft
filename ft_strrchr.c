@@ -6,7 +6,7 @@
 /*   By: martcast <martcast@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/15 09:51:26 by martcast          #+#    #+#             */
-/*   Updated: 2023/03/15 15:46:12 by martcast         ###   ########.fr       */
+/*   Updated: 2023/03/16 15:09:25 by martcast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /* DESCRIPCIÓN/
@@ -21,14 +21,12 @@
 char	*ft_strrchr(const char *s, int c)
 {
 	char	charcpy;
-
 	int		len;
 	char	*ss;
 
 	ss = (char *)s;
 	len = ft_strlen(s);
 	charcpy = (char) c;
-
 	while (len >= 0)
 	{
 		if (s[len] == charcpy)
