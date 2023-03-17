@@ -11,10 +11,15 @@
 /* ************************************************************************** */
  #include <string.h>
 #include <stdio.h>
+char *ft_strnstr(const char *haystack, const char *needle, size_t len);
 int main(void)
 {
      const char *largestring = "Foo Bar Baz";
      const char *smallstring = "Bar";
      printf("%s", strnstr(largestring, smallstring, 8));
+  printf("\n");
+      const char *largestring2 = "Foo Bar Baz";
+     const char *smallstring2 = "Bar";
+     printf("%s", ft_strnstr(largestring2, smallstring2, 8));
      return (0);
 }
