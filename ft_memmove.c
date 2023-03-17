@@ -11,42 +11,45 @@
 /* ************************************************************************** */
 /*DESCRIPCIÓN
      La función memmove() copia len bytes de la cadena src a la cadena dst.
-     Las dos cadenas pueden superponerse; la copia
+     Las dos cadenas pueden superponerse y controla la gestion de overlap; 
+	 la copia
      siempre se realiza de forma no destructiva.
 
 VALORES DEVUELTOS
      La función memmove() devuelve el valor original de dst.*/
 #include <string.h>
 
-size_t	ft_strlen(const char *s)
+void	reverse_copy(char *d, const char *s, size_t len)
 {
-	size_t	i;
-
-	i = 0;
-	while (s[i] != '\0')
-		i++;
-	return (i);
+	while (len > 0)
+	{
+		d[len - 1] = s[len - 1];
+		len--;
+	}
 }
 
-void *ft_memmove(void *dst, const void *src, size_t len)
+void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-     char		*dest;
-	const char	*origin;
 	size_t		i;
-	const char *aux;
-	dest = dst;
-	origin = src;
-	
+	char		*d;
+	const char	*s;
+
 	i = 0;
-	
-	while (origin[i] != '\0' && len)
+	d = dst;
+	s = src;
+	if (dst == NULL && src == NULL)
+		return (NULL);
+	if (dst <= src)
 	{
-		aux[i] = origin[i];
-		i ++;
+		while (i < len)
+		{
+			d[i] = s[i];
+			i++;
+		}
 	}
-		aux[i] = '\0';
-
-
-	
-	return (aux);
+	else
+	{
+		reverse_copy(d, s, len);
+	}
+	return (dst);
 }

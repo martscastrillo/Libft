@@ -28,13 +28,13 @@ char *ft_strnstr(const char *haystack, const char *needle, size_t len)
 	result = (char *)haystack;
 	src = (char *)needle;
 	if (src[j] == '\0')
-		return (&result[j]);
+		return (result);
 	while (result[i] != '\0')
 	{
 		while (result[i + j] == src[j] && result[i + j] != '\0' && (i + j) < len)
 			j++;
 		if (src[j] == '\0')
-			return (&result[j+1]);
+			return (&result[i+1]);
 		i++;
 		j = 0;
 	}

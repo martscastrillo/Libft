@@ -38,7 +38,7 @@ int	ft_tolower(int c);
 int	ft_toupper(int c);
 
 
-
+void	*ft_memmove(void *dst, const void *src, size_t len);
 
 
 

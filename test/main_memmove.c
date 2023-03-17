@@ -16,5 +16,14 @@ int main () {
    ft_memmove(dest1, src1, 9);
    printf("After memmove dest1 = %s, src1 = %s\n", dest1, src1);
 
+
+
+   char dest2[];
+   const char src2[]  = "newstring";
+
+   printf("Before memmove dest = %s, src = %s\n", dest2, src2);
+   memmove(dest2, src2, 9);
+   printf("After memmove dest = %s, src = %s\n", dest2, src2);
+   
    return(0);
 }
