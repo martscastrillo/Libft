@@ -10,33 +10,43 @@
 /*                                                                            */
 /* ************************************************************************** */
 /* DESCRIPCIÓN/
- * 
+ * La función strnstr() en C es una función que busca una subcadena dentro
+ * de otra. Toma como argumento dos strings y un size_t. size_t es el número 
+ * max de caracteres donde busca desde el incio de haystack. 
  * VALOR DEVUELTO
- * 
+ * devuelve un puntero al primer carácter de la subcadena
+ * si se encontró, si no encuentra nada en needle,
+ * devuelve haystack directamente. 
  */
 #include <string.h>
+
+
 char *ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
 
 	size_t	i;
 	size_t	j;
-    char	*result;
-    char	*src;
+   
 
 	i = 0;
-	j = 0;
-	result = (char *)haystack;
-	src = (char *)needle;
-	if (src[j] == '\0')
-		return (result);
-	while (result[i] != '\0')
+	//j = 0;
+
+	if (needle[0] == '\0') // (!*needle)
+		return ((char *) haystack); // casteamos haystack
+	while (haystack[i] != '\0' && i < len)
 	{
-		while (result[i + j] == src[j] && result[i + j] != '\0' && (i + j) < len)
-			j++;
-		if (src[j] == '\0')
-			return (&result[i+1]);
+		if(haystack[i] == needle[0])
+		{
+			j = 0;
+			//while(haystack[i+j] == needle[j] && haystack[i+j]!= '\0' && needle[j] != '\0')
+			while (haystack[i+j] == needle[j] && needle[j] != '\0' && (i+j) < len)
+				j++;
+			
+			if (needle[j] == '\0') // Si hemos encontrado needle en haystack
+				return ((char *) &haystack[i]);
+		}
 		i++;
-		j = 0;
+		
 	}
-	return (0);
+	return (NULL);
 }
