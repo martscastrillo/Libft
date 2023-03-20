@@ -6,7 +6,7 @@
 /*   By: martcast <martcast@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/15 09:52:36 by martcast          #+#    #+#             */
-/*   Updated: 2023/03/16 15:13:49 by martcast         ###   ########.fr       */
+/*   Updated: 2023/03/20 11:09:49 by martcast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /* DESCRIPCIÓN/
@@ -27,7 +27,7 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	dest = dst;
 	origin = src;
 	i = 0;
-	if(dest == NULL && origin == NULL)
+	if (dest == NULL && origin == NULL)
 		return (NULL);
 	while (i < n)
 	{
