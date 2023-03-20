@@ -6,7 +6,7 @@
 /*   By: martcast <martcast@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/20 11:44:22 by martcast          #+#    #+#             */
-/*   Updated: 2023/03/20 11:45:54 by martcast         ###   ########.fr       */
+/*   Updated: 2023/03/20 15:15:18 by martcast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /* DESCRIPCIÓN/
@@ -19,20 +19,20 @@
 
 char	*ft_strdup(const char *s1)
 {
-   	char	*new;
-	size_t len;
-	int i;
+	char	*new;
+	size_t	len;
+	int		i;
 
-	len = ft_strlen(s1) + 1;
-	new = malloc(len * sizeof(char));
+	len = ft_strlen (s1) + 1;
+	new = malloc (len * sizeof(char));
 	if (new == NULL)
 		return (0);
 	i = 0;
-	while(s1[i] != '\0')
+	while (s1 [i] != '\0')
 	{
-		new[i] = s1[i];
-		i++;
+		new [i] = s1 [i];
+		i ++;
 	}
-	new[i] = '\0';
-	return(new);
+	new [i] = '\0';
+	return (new);
 }
