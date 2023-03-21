@@ -17,9 +17,12 @@
  * VALOR DEVUELTO
  * Si los dos strings son iguales devuelve 0. Si son distintos devuelve la 
  * diferencia entre los caracteres que no coincidan*/
-int	ft_strncmp(char *s1, char *s2, unsigned int n)
+
+#include <string.h>
+
+int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	unsigned int	i;
+	size_t			i;
 	unsigned char	*ss1;
 	unsigned char	*ss2;
 

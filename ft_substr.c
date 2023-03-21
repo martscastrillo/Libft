@@ -17,33 +17,26 @@
  * La substring resultante. NULL si falla la reserva de memoria.
  * */
 #include <stdlib.h>
+#include "libft.h"
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	char *substr;
+    char *dest;
+	
+	if(len == 0 || start >= ft_strlen(s))
+		return (NULL);
+	if (len > ft_strlen(s)-start)
+		len = ft_strlen(s)-start;
+	if(  s[0] == '\0' )
+		return (NULL);
+	dest = malloc(sizeof(char) * (len + 1));
 	unsigned int i;
-	unsigned int j;
-	unsigned int leng;
-	substr = (char *) s;
-	leng = (unsigned int) len;
-	substr = malloc (len * sizeof(char));
-	if (substr == NULL)
-		return (0);
-	if (len == 0)
-		return (NULL);	
 	i = 0;
-	while(s[i] != '\0')
+	while(i<len)
 	{	
-		if(start == i)
-		{
-			j = i;
-			while (i >(j + len) )
-			{
-				substr[i] = s[i];
-				j++;
-			}
-		}
-		i ++;
+		dest[i] = s[start];
+		i++;
+		start++;
 	}
-	substr [i] = '\0';
-	return ((char *) &substr[i]);
+    dest[i] = '\0';
+    return (dest);
 }	

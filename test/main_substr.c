@@ -10,16 +10,17 @@
 /*                                                                            */
 /* ************************************************************************** */
 #include <stdio.h>
+#include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 int main () {
    
   
    const char *str = "HOLA QUE TAL";
-   
+    printf("%s\n", ft_substr(str, 6,19));
+ 
+   printf("hola\n");
 
-   printf("%s\n", ft_substr(str, 6,4));
-   
-   
    return(0);
 }
