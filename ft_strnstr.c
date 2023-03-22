@@ -27,7 +27,8 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	size_t		j;
 	const char	*hay;
 	const char	*nee;
-
+	if (!haystack && len == 0)
+			return (NULL);
 	hay = haystack;
 	nee = needle;
 	i = 0;
