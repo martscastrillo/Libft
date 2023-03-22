@@ -16,7 +16,7 @@
  * VALOR DEVUELTO
  * La función memset() devuelve un puntero al área de memoria s. 
  * El string modificado*/
-#include <string.h>
+#include "libft.h"
 
 void	*ft_memset(void *b, int c, size_t len)
 {

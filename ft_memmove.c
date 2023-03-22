@@ -17,7 +17,7 @@
 
 VALORES DEVUELTOS
      La función memmove() devuelve el valor original de dst.*/
-#include <string.h>
+#include "libft.h"
 
 void	reverse_copy(char *d, const char *s, size_t len)
 {

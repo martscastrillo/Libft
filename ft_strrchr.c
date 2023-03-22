@@ -15,7 +15,6 @@
  * VALOR DEVUELTO
  * Si no encuentra c, devuelve NULL, si lo encuentra, devuelve un puntero
  * a la primera ocurrencia del carácter c en la cadena de caracteres s.*/
-#include <string.h>
 #include "libft.h"
 
 char	*ft_strrchr(const char *s, int c)

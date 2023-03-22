@@ -13,6 +13,8 @@
  * La función isdigit() toma un único argumento en forma de número entero.
  * VALOR DEVUELTO
  * Devuelve 0 si no es número y devuelve 1 si lo es.*/
+#include "libft.h"
+
 int	ft_isdigit(int c)
 {
 	if (c >= 48 && c <= 57)

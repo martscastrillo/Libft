@@ -14,6 +14,8 @@
  * VALOR DEVUELTO
  * Devuelve 0 si no es parte del alfabeto o está dentro de los numeos
  * y devuelve 1 si lo está.*/
+#include "libft.h"
+
 int	ft_isalnum(int c)
 {
 	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122) || (c >= 48 && c <= 57))

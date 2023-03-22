@@ -13,7 +13,7 @@
  * La función strlen() toma un único argumento en forma de string.
  * VALOR DEVUELTO
  * Devuelve un entero con la longitud del string.*/
-#include <string.h>
+#include "libft.h"
 
 size_t	ft_strlen(const char *s)
 {

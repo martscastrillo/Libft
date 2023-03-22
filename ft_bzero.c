@@ -15,7 +15,7 @@
  * VALOR DEVUELTO
  * La función bzero() devuelve un puntero al área de memoria s.
  * El string modificado*/
-#include <string.h>
+#include "libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {

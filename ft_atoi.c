@@ -16,6 +16,7 @@
 * leer la cadena de entrada en el primer carácter que no puede reconocer
 * como parte de un número. Este carácter puede ser el carácter nulo que
 * finaliza la cadena.*/
+#include "libft.h"
 
 int	ft_atoi(char *str)
 {

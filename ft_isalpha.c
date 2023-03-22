@@ -13,6 +13,8 @@
  * La función isalpha() toma un único argumento en forma de número entero.
  * VALOR DEVUELTO
  * Devuelve 0 si no es parte del alfabeto y devuelve 1 si lo es.*/
+#include "libft.h"
+
 int	ft_isalpha(int c)
 {
 	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))

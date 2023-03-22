@@ -18,7 +18,7 @@
  * Si los dos strings son iguales devuelve 0. Si son distintos devuelve la 
  * diferencia entre los caracteres que no coincidan*/
 
-#include <string.h>
+#include "libft.h"
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {

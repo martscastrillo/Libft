@@ -14,6 +14,8 @@
  * VALOR DEVUELTO
  * Devuelve el entero restandole las 32 posiciones que hacen que pase de
  * minuscula a mayuscula.*/
+#include "libft.h"
+
 int	ft_tolower(int c)
 {
 	if ((c >= 'A' && c <= 'Z'))
