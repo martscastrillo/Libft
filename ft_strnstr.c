@@ -36,9 +36,9 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 		return ((char *) hay);
 	while (hay[i] != '\0' && i < len)
 	{
-		if (hay[i] == nee[0])
+		j = 0;
+		if (hay[i] == nee[j])
 		{
-			j = 0;
 			while (hay[i + j] == nee[j] && nee[j] != '\0' && (i + j) < len)
 				j++;
 			if (nee[j] == '\0')
