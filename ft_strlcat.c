@@ -6,7 +6,7 @@
 /*   By: martcast <martcast@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/09 11:05:43 by martcast          #+#    #+#             */
-/*   Updated: 2023/03/16 15:08:30 by martcast         ###   ########.fr       */
+/*   Updated: 2023/03/22 20:10:46 by martcast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /* NON-SENSE
@@ -26,12 +26,12 @@ size_t	ft_strlcat(char *dst,
 	unsigned int	i;
 	unsigned int	d_len;
 	unsigned int	s_len;
+
 	if (!dst && dstsize == 0)
-			return (0);
+		return (0);
 	s_len = ft_strlen(src);
 	d_len = ft_strlen(dst);
 	i = d_len;
-
 	if (dstsize <= d_len)
 		return (ft_strlen(src) + dstsize);
 	while (i < dstsize - 1 && *src)

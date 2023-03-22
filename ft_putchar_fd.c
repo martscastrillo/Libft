@@ -6,12 +6,12 @@
 /*   By: martcast <martcast@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/22 18:28:35 by martcast          #+#    #+#             */
-/*   Updated: 2023/03/22 18:28:37 by martcast         ###   ########.fr       */
+/*   Updated: 2023/03/22 20:54:22 by martcast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 
-void ft_putchar_fd(char c, int fd)
+void	ft_putchar_fd(char c, int fd)
 {
-    write(fd, &c, 1);
+	write(fd, &c, 1);
 }

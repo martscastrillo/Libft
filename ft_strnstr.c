@@ -6,7 +6,7 @@
 /*   By: martcast <martcast@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/13 21:22:45 by martcast          #+#    #+#             */
-/*   Updated: 2023/03/20 11:31:20 by martcast         ###   ########.fr       */
+/*   Updated: 2023/03/22 20:09:44 by martcast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /* DESCRIPCIÓN/
@@ -27,8 +27,9 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	size_t		j;
 	const char	*hay;
 	const char	*nee;
+
 	if (!haystack && len == 0)
-			return (NULL);
+		return (NULL);
 	hay = haystack;
 	nee = needle;
 	i = 0;

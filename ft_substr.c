@@ -6,7 +6,7 @@
 /*   By: martcast <martcast@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/20 15:15:43 by martcast          #+#    #+#             */
-/*   Updated: 2023/03/20 15:21:14 by martcast         ###   ########.fr       */
+/*   Updated: 2023/03/22 20:58:18 by martcast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /* DESCRIPCIÓN/
@@ -18,28 +18,30 @@
  * */
 #include <stdlib.h>
 #include "libft.h"
+
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-    char *dest;
-	if(!s)
+	char			*dest;
+	unsigned int	i;
+
+	if (!s)
 		return (NULL);
-	if(len <= 0 || start > ft_strlen(s))
+	if (len <= 0 || start > ft_strlen(s))
 		return (ft_strdup(""));
-	if (len > ft_strlen(s)-start)
-		len = ft_strlen(s)-start;
-	if(  s[0] == '\0' ) 
+	if (len > ft_strlen(s) - start)
+		len = ft_strlen(s) - start;
+	if (s[0] == '\0' )
 		return (NULL);
 	dest = malloc(sizeof(char) * (len + 1));
-	if(!dest)
+	if (!dest)
 		return (NULL);
-	unsigned int i;
 	i = 0;
-	while(i<len)
+	while (i < len)
 	{	
 		dest[i] = s[start];
-		i++;
-		start++;
+		i ++;
+		start ++;
 	}
-    dest[i] = '\0';
-    return (dest);
+	dest[i] = '\0';
+	return (dest);
 }	
