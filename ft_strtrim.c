@@ -6,12 +6,11 @@
 /*   By: martcast <martcast@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/22 17:16:03 by martcast          #+#    #+#             */
-/*   Updated: 2023/03/23 16:11:21 by martcast         ###   ########.fr       */
+/*   Updated: 2023/03/23 16:18:46 by martcast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /* ft_strchr(set, s1[i]) si nos devuelve 0 es que no encuentra coincidencia, 
-de modo, que si lo encuentra entra en el bucle y avanza, quiere decir que
-existe coincidencia*/
+de modo, que si lo encuentra entra en el bucle */
 
 #include "libft.h"
 
