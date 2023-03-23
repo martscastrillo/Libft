@@ -10,3 +10,17 @@
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
+char *ft_strtrim(char const *s1, char const *set)
+{
+/*     if (!s1 && !set)
+		return (NULL); */
+    return (NULL);
+
+/*     unsigned char	*new; */
+    char *str_trim;
+	str_trim = malloc(sizeof(char) * (ft_strlen(s1) + ft_strlen(set) + 1));
+    if (str_trim == NULL)
+		return (0);
+/* 	if (!new)
+		    return (NULL); */
+}

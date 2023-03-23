@@ -6,14 +6,14 @@
 /*   By: martcast <martcast@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/22 18:28:09 by martcast          #+#    #+#             */
-/*   Updated: 2023/03/22 22:27:28 by martcast         ###   ########.fr       */
+/*   Updated: 2023/03/23 11:43:26 by martcast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 
-void ft_putendl_fd(char *s, int fd)
+void	ft_putendl_fd(char *s, int fd)
 {
-    ft_putstr_fd(s, fd);
-    write(fd, "\n", 1);
-    return ;
+	ft_putstr_fd(s, fd);
+	write(fd, "\n", 1);
+	return ;
 }
