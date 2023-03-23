@@ -29,10 +29,12 @@ clean:
 	@rm -f ${OBJ}
 	@echo OK
 
-fclean: clean
+fclean: clean 
 	@echo ${TEST_FILE} borrados
 	@rm -f ${TEST_FILE}
+	@rm -f ${NAME}
 
+re : fclean all
 # TESTS
 
 TEST_FILE = tests
