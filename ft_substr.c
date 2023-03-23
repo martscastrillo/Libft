@@ -6,7 +6,7 @@
 /*   By: martcast <martcast@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/20 15:15:43 by martcast          #+#    #+#             */
-/*   Updated: 2023/03/22 21:17:46 by martcast         ###   ########.fr       */
+/*   Updated: 2023/03/23 13:58:33 by martcast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /* DESCRIPCIÓN/
@@ -41,4 +41,4 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	}
 	dest[i] = '\0';
 	return (dest);
-}	
+}
