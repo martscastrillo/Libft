@@ -34,15 +34,11 @@ Este proyecto es el primero de los proyectos de 42 Madrid.
 ##### Valor devuelto
 - Devuelve 0 si no pertenece a la tabla ascii y devuelve 1 si si pertenece.
 
-###             
+### ft_isdigit()             
 ##### Descripción
-- 
+- La función isdigit() toma un único argumento en forma de número entero.
 ##### Valor devuelto
-- 
-/* DESCRIPCIÓN
- * La función isdigit() toma un único argumento en forma de número entero.
- * VALOR DEVUELTO
- * Devuelve 0 si no es número y devuelve 1 si lo es.*/
+- Devuelve 0 si no es número y devuelve 1 si lo es.
 
 ### ft_isprint()             
 ##### Descripción
@@ -67,6 +63,7 @@ Este proyecto es el primero de los proyectos de 42 Madrid.
 - La función memcmp() toma como argumento dos strings y un int. Se presupone que la longitud de los strings es de n. 
 ##### Valor devuelto
 - Si los dos strings son iguales devuelve 0. Si son distintos devuelve la diferencia entre los caracteres que no coincidan*/
+
 ### ft_memcpy()             
 ##### Descripción
 - La función memcpy() toma como argumentos dos strings, uno src y otro dst, y un size_t n, que es el numero de bytes que se van a copiar de src a dest. Si hay algún solapamiento entre las ubicaciones de origen y destino, el comportamiento es indefinido 
@@ -78,17 +75,12 @@ Este proyecto es el primero de los proyectos de 42 Madrid.
 - La función memmove() copia len bytes de la cadena src a la cadena dst. Las dos cadenas pueden superponerse y controla la gestion de overlap; la copia siempre se realiza de forma no destructiva.
 ##### Valor devuelto
 - La función memmove() devuelve el valor original de dst.
+
 ### ft_memset()            
 ##### Descripción
 - La función memset() toma como argumentos un string, un valor c (convertido a unsigned char) y una longitud len. Rellena los n primeros bytes del area de s con la constante c.
 ##### Valor devuelto
 - La función memset() devuelve un puntero al área de memoria s. El string modificado 
-
-###             
-##### Descripción
-- 
-##### Valor devuelto
-- 
 
 ### ft_putchar_fd()             
 ##### Descripción
@@ -126,6 +118,12 @@ Este proyecto es el primero de los proyectos de 42 Madrid.
 ##### Valor devuelto
 - Devuelve un puntero al nuevo objeto.
 
+### ft_striteri()            
+##### Descripción
+- 
+##### Valor devuelto
+
+
 ### ft_strjoin()            
 ##### Descripción
 - 
@@ -151,6 +149,12 @@ Este proyecto es el primero de los proyectos de 42 Madrid.
 ##### Valor devuelto
 - Devuelve un entero con la longitud del string.
 
+### ft_strmapi()          
+##### Descripción
+- 
+##### Valor devuelto
+- 
+
 ### ft_strncmp()          
 ##### Descripción
 - La funcion strncmp() compara lexicográficamente las cadenas  s1 y s2. La función strncmp() no compara más de n caracteres. Debido a que strncmp() está diseñado para comparar cadenas en lugar de datos binarios, los caracteres que aparecen después de un `\0' los personajes no se comparan.
@@ -162,42 +166,34 @@ Este proyecto es el primero de los proyectos de 42 Madrid.
 - La función strnstr() en C es una función que busca una subcadena dentro de otra. Toma como argumento dos strings y un size_t. size_t es el número max de caracteres donde busca desde el incio de haystack. 
 ##### Valor devuelto
 - Devuelve un puntero al primer carácter de la subcadena si se encontró, si no encuentra nada en needle, devuelve haystack directamente. line 35 casteamos haystack desde el return
-### ft_          
+
+### ft_strrchr()          
 ##### Descripción
-- 
+- La función strrchr() toma como argumento un string y un entero. El entero c es el entero que debe localizar. Busca de atrás hacua delante.
+##### Valor devuelto
+- Si no encuentra c, devuelve NULL, si lo encuentra, devuelve un puntero a la primera ocurrencia del carácter c en la cadena de caracteres s.
+
+### ft_strtrim()        
+##### Descripción
+- La función ft_strtrim()
+- La función ft_strchr(set, s1[i]) si nos devuelve 0 es que no encuentra coincidencia, 
+de modo, que si lo encuentra entra en el bucle
 ##### Valor devuelto
 - 
-/* DESCRIPCIÓN/
- * La función strrchr() toma como argumento un string y un entero.
- *  El entero c es el entero que debe localizar. Busca de atrás hacua delante.
- * VALOR DEVUELTO
- * Si no encuentra c, devuelve NULL, si lo encuentra, devuelve un puntero
- * a la primera ocurrencia del carácter c en la cadena de caracteres s.*/
-### ft_          
+
+### ft_substr()          
 ##### Descripción
-- 
-##### Valor devuelto
-- 
-/* ft_strchr(set, s1[i]) si nos devuelve 0 es que no encuentra coincidencia, 
-de modo, que si lo encuentra entra en el bucle */
-### ft_          
-##### Descripción
-- 
-##### Valor devuelto
-- 
-/* DESCRIPCIÓN/
- * La función substr() tiene tres parámetros s: La string desde la que 
- * crear la substring. start: El índice del caracter en ’s’ desde
- * el que empezar la substring. len: La longitud máxima de la substring.
- * VALOR DEVUELTO
- * La substring resultante. NULL si falla la reserva de memoria.
- * */
+- La función substr() tiene tres parámetros s: La string desde la que crear la substring. start: El índice del caracter en ’s’ desde el que empezar la substring. len: La longitud máxima de la substring. 
+##### Valor devuelto 
+- La substring resultante. NULL si falla la reserva de memoria.
+
 ### ft_toupper()          
 ##### Descripción
 - La función toupper() toma un único argumento en forma entero.
 ##### Valor devuelto
 - Devuelve el entero restandole las 32 posiciones que hacen que pase de minuscula a mayuscula.*/
 
+------------
 ### ft_          
 ##### Descripción
 - 
