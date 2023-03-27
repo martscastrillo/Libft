@@ -13,8 +13,7 @@
  * La función strdup() asigna suficiente memoria para hacer una copia
  * de la cadena de s1, hace la copia, y devuelve un apuntador a ella.
  * VALOR DEVUELTO
- * Devuelve un puntero al nuevo objeto.
- * */
+ * Devuelve un puntero al nuevo objeto. */
 #include "libft.h"
 
 char	*ft_strdup(const char *s1)

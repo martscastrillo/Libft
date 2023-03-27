@@ -9,7 +9,11 @@
 /*   Updated: 2023/03/27 17:08:30 by martcast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
+/* DESCRIPCIÓN/
+ * La función ft_strmapi() 
+ * 
+ * VALOR DEVUELTO
+ *  */
 
 #include "libft.h"
 char *ft_strmapi(char const *s, char (*f)(unsigned int, char))

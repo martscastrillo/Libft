@@ -15,7 +15,9 @@
 * como un valor numérico del tipo de retorno especificado. La función deja de
 * leer la cadena de entrada en el primer carácter que no puede reconocer
 * como parte de un número. Este carácter puede ser el carácter nulo que
-* finaliza la cadena.*/
+* finaliza la cadena.
+* VALOR DEVUELTO 
+* El int resultante */
 #include "libft.h"
 
 int	ft_atoi(char *str)

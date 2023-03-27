@@ -9,11 +9,10 @@
 /*   Updated: 2023/03/27 19:34:38 by martcast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-/* DESCRIPCIÓN
- * 
- * VALOR DEVUELTO
- * 
- */
+/* DESCRIPCIÓN/
+* La función itoa() convierte un valor entero a una cadena de caracteres.
+* VALOR DEVUELTO 
+* La cadena resultante */
 #include "libft.h"
 
 char *ft_itoa(int n)

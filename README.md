@@ -48,9 +48,9 @@ Este proyecto es el primero de los proyectos de 42 Madrid.
 
 ### ft_itoa()             
 ##### Descripción
-- 
+- La función itoa() convierte un valor entero a una cadena de caracteres.
 ##### Valor devuelto
-- 
+- La cadena resultante
 
 ### ft_strchr()             
 ##### Descripción

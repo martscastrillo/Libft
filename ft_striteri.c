@@ -9,7 +9,11 @@
 /*   Updated: 2023/03/27 17:18:31 by martcast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
+/* DESCRIPCIÓN/
+ * La función ft_striteri() 
+ * 
+ * VALOR DEVUELTO
+ *  */
 
 void ft_striteri(char *s, void (*f)(unsigned int, char*)){
     
