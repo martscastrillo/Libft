@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 /* DESCRIPCIÓN/
  * La función strrchr() toma como argumento un string y un entero.
- *  El entero c es el entero que debe localizar. Busca de atrás hacua delante.
+ *  El entero c es el entero que debe localizar. Busca de atrás hacia delante.
  * VALOR DEVUELTO
  * Si no encuentra c, devuelve NULL, si lo encuentra, devuelve un puntero
  * a la primera ocurrencia del carácter c en la cadena de caracteres s.*/
