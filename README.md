@@ -84,27 +84,27 @@ Este proyecto es el primero de los proyectos de 42 Madrid.
 
 ### ft_putchar_fd()             
 ##### Descripción
-- 
+- La función putchar_fd() toma como argumento un char y un int, el character a escribir y el file descriptor del write.
 ##### Valor devuelto
-- 
+- VOID - Pinta el char
 
 ### ft_putendl_fd()             
 ##### Descripción
-- 
+- La función ft_putendl_fd() toma como argumento un char string y un int, el string es el string a escribir y el file descriptor del write.
 ##### Valor devuelto
-- 
+- VOID - Pinta el string y un salto de línea.
 
 ### ft_putnbr_fd()             
 ##### Descripción
-- 
+- La función ft_putnbr_fd() toma como argumento dos ints, uno el int que queremos pintar, el otro el file descriptor del write.
 ##### Valor devuelto
-- 
+- VOID - Pinta el número
 
 ### ft_putstr_fd()             
 ##### Descripción
-- 
+- La función ft_putstr_fd() toma como argumento un char string y un int, el string es el string a escribir y el file descriptor del write.
 ##### Valor devuelto
-- 
+- VOID - Pinta el string y un salto de línea. 
 
 ### ft_strchr()             
 ##### Descripción

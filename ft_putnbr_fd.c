@@ -9,6 +9,12 @@
 /*   Updated: 2023/03/23 11:47:22 by martcast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+/* DESCRIPCIÓN/
+ * La función ft_putnbr_fd() toma como argumento dos ints, uno el int que 
+ * queremos pintar, el otro el file descriptor del write.
+ * VALOR DEVUELTO
+ * VOID - Pinta el número */
+
 #include "libft.h"
 
 void	ft_putnbr_fd(int n, int fd)
