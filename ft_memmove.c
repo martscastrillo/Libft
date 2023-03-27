@@ -14,7 +14,6 @@
      Las dos cadenas pueden superponerse y controla la gestion de overlap; 
 	 la copia
      siempre se realiza de forma no destructiva.
-
 VALORES DEVUELTOS
      La función memmove() devuelve el valor original de dst.*/
 #include "libft.h"

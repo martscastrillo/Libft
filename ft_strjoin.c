@@ -9,6 +9,11 @@
 /*   Updated: 2023/03/22 21:09:58 by martcast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+/* DESCRIPCIÓN/
+ * 
+ * VALOR DEVUELTO
+ * 
+ * */
 #include "libft.h"
 
 char	*ft_strjoin(char const *s1, char const *s2)
