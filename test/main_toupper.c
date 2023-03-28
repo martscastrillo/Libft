@@ -1,30 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_striteri.c                                      :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: martcast <martcast@student.42madrid>       +#+  +:+       +#+        */
+/*   By: martcast <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/03/27 17:18:29 by martcast          #+#    #+#             */
-/*   Updated: 2023/03/28 09:51:12 by martcast         ###   ########.fr       */
+/*   Created: 2023/02/13 22:51:35 by martcast          #+#    #+#             */
+/*   Updated: 2023/03/09 17:03:13 by martcast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-/* DESCRIPCIÓN/
- * La función ft_striteri() 
- * 
- * VALOR DEVUELTO
- *  */
+#include <stdio.h>
+#include <string.h>
 
-void	ft_striteri(char *s, void (*f)(unsigned int, char*))
-{
-	unsigned int	i;
+ int ft_toupper(int c);
+ 
+ int main (void)
+ {
+    int c = 112;
+	printf("%c\n", c);
+	ft_toupper(c);
+    printf("%c \n", ft_toupper(c));
+ 	return (0);
+ }
 
-	if (!s || !f)
-		return ;
-	i = 0;
-	while (s[i] != '\0')
-	{
-		f(i, &s[i]);
-		i++;
-	}
-}

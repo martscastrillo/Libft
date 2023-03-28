@@ -17,13 +17,14 @@
 
 char *ft_itoa(int n)
 {
-    int len = 0;
-    int temp = n;
+    int temp;
     int i;
     char *str;
+    int len;
 
-
-    while(temp != 0)
+    len = 0;
+    temp = n;
+    while (temp != 0)
     {
         len++;
         temp = temp / 10;
@@ -47,13 +48,12 @@ char *ft_itoa(int n)
     i = len-1;
     while(i>=0) 
     {
-     /*    if(str[i] != '-')
-        { */
+        if(str[i] != '-')
+        {
         str[i] = (n % 10) + '0';
             n /= 10;
-   /*      }   */
+       }   
         i--;
     }
-   
     return str;
 }

@@ -5,4 +5,4 @@
 *.swp
 .DS_Store
 /libft-unit-test
-/test
+/valgrind_42

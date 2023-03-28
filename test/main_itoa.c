@@ -1,5 +1,6 @@
 #include <stdio.h>
 char    *ft_itoa(int n);
+
 int main (void)
 {
      int num = 1238;
