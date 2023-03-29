@@ -26,17 +26,17 @@ char *ft_itoa(int n)
     len = 0;
     temp = n;
     i = 0;
-    if(n == 0)
-        str = 0;
+  
     while (temp != 0)
     {
         len++;
         temp = temp / 10;
     }
-    if (n < 0)
+    if (n < 0 || n == 0)
     {
         len++;
     }
+  /*     printf("%d\n", len); */
        str = (char *)malloc((len + 1) * sizeof(char));
      if (str == NULL )
     {
@@ -54,7 +54,7 @@ char *ft_itoa(int n)
     i = len-1;
     while(i>=0) 
     {   
-           
+         
         if(str[i] != '-')
         {
            /*  printf("entra por i = 0\n"); */
