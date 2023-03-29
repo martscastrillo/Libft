@@ -14,6 +14,7 @@
 * VALOR DEVUELTO 
 * La cadena resultante */
 #include "libft.h"
+#include <stdio.h>
 
 char *ft_itoa(int n)
 {
@@ -24,6 +25,9 @@ char *ft_itoa(int n)
 
     len = 0;
     temp = n;
+    i = 0;
+    if(n == 0)
+        str = 0;
     while (temp != 0)
     {
         len++;
@@ -34,26 +38,34 @@ char *ft_itoa(int n)
         len++;
     }
        str = (char *)malloc((len + 1) * sizeof(char));
-      if (str == NULL)
+     if (str == NULL )
     {
-        return NULL;
+        return (NULL);
+     /*    printf("entra por str null\n"); */
     }
  
     str[len] = '\0';
     if (n < 0)
     {
+     /*    printf("entra por n<0 \n"); */
         str[0] = '-';
         n = -n;
     }
     i = len-1;
     while(i>=0) 
-    {
+    {   
+           
         if(str[i] != '-')
         {
+           /*  printf("entra por i = 0\n"); */
         str[i] = (n % 10) + '0';
             n /= 10;
        }   
         i--;
     }
+
+    str[i] = '\0';
+      /* printf("%s\n", str); */
+     
     return str;
 }
