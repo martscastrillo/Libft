@@ -34,7 +34,7 @@ char *ft_itoa(int n)
 
     if (n < 0 || n == 0)
         len++;
-    str = (char *)malloc((len + 1) * sizeof(char));
+    str = malloc((len + 1) * sizeof(char));
     if (str == NULL)
         return (NULL);
     str[len] = '\0';
@@ -44,6 +44,8 @@ char *ft_itoa(int n)
         n = -n;
     }
    i = 0;
+
+   /* strdup hacerlo antes del malloc*/
      if (n == -2147483648)
     {
         char *minInt = "-2147483648";
@@ -52,6 +54,7 @@ char *ft_itoa(int n)
             str[i] = minInt[i];
             i++;
         }
+   /*      hacer un return y quitar el else */
     } 
 else{
     i = len - 1;
