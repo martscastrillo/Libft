@@ -11,7 +11,7 @@ int main (void)
      char *str2 = ft_itoa(num2);
 
      printf("El número %d convertido a una cadena es: %s\n", num2, str2);
-    int num3 = 0001;
+    int num3 = -2147483648;
      char *str3 = ft_itoa(num3);
 
      printf("El número %d convertido a una cadena es: %s\n", num3, str3);

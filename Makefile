@@ -47,3 +47,4 @@ run: ${TEST_FILE}
 
 ${TEST_FILE}: ${TEST_OBJ} ${NAME}
 	${COMPILE} ${TEST_OBJ} ${NAME} -o ${TEST_FILE}
+
