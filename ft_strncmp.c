@@ -13,7 +13,7 @@
  * La funcion strncmp() compara lexicográficamente las cadenas  s1 y s2.
  * La función strncmp() no compara más de n caracteres. Debido a que strncmp()
  * está diseñado para comparar cadenas en lugar de datos binarios,
- * los caracteres que aparecen después de un `\0' los personajes no se comparan.
+ * los caracteres que aparecen después de un `\0' los caracteres no se comparan.
  * VALOR DEVUELTO
  * Si los dos strings son iguales devuelve 0. Si son distintos devuelve la 
  * diferencia entre los caracteres que no coincidan*/
