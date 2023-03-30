@@ -14,7 +14,7 @@
 /* char *ft_strchr(const char *s, int c);
  */int main () {
    const char str[] = "http://www.tutorialspoint.com";
-   const char ch = '*';
+   const char ch = '.';
    char *ret;
 
    ret = strchr(str, ch);
