@@ -10,10 +10,10 @@
 /*                                                                            */
 /* ************************************************************************** */
 /* DESCRIPCIÓN/
- * La función toupper() toma un único argumento en forma entero.
+ * La función tolower() toma un único argumento en forma entero.
  * VALOR DEVUELTO
- * Devuelve el entero restandole las 32 posiciones que hacen que pase de
- * minuscula a mayuscula.*/
+ * Devuelve el entero sumandole las 32 posiciones que hacen que pase de
+ * mayuscyka a minuscula.*/
 #include "libft.h"
 
 int	ft_tolower(int c)

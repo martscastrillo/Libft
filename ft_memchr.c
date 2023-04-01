@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 /* DESCRIPCIÓN/
- * La función strchr() toma como argumento un string, un entero y un size_t.
+ * La función memchr() toma como argumento un string, un entero y un size_t.
  * El entero c es el entero que debe localizar, el size_t son los primeros
  * n caracteres donde busca 
  * VALOR DEVUELTO

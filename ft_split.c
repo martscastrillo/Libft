@@ -10,9 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 /* DESCRIPCIÓN/
- * 
+ * La función split() toma dos argunmentos, el string a separar s y el character * delimitador. La función va a separar en strings distintos cada bloque del  
+ * string que esté entre los delimitadores.
  * VALOR DEVUELTO
- * 
+ * Devuelve un array de arrays, una matriz, con las strings resultantes de la 
+ * separación.
  * */
 #include "libft.h"
 /* char **ft_split(char const *s, char c) */

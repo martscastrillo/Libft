@@ -9,8 +9,14 @@
 /*   Updated: 2023/03/23 16:18:46 by martcast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-/* ft_strchr(set, s1[i]) si nos devuelve 0 es que no encuentra coincidencia, 
-de modo, que si lo encuentra entra en el bucle */
+/* DESCRIPCIÓN/
+ * La función strtrim() toma como argumentos dos strings, por un lado s1 que es * la string que debe ser cortada y por otro lado set, donde aparecen los
+ * caracteres a eliminar de ese string. Elimina todos los caracteres que 
+ * aparecen en set desde el principio hasta el final, hasta encontrar un
+ * caracter no perteneciente a set.
+ * VALOR DEVUELTO
+ * La string recortada.
+ * */
 
 #include "libft.h"
 

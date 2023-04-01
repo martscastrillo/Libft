@@ -2,7 +2,7 @@
 #include <string.h>
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
-char ft_toupper4(unsigned int s, char c)
+char ft_toupper(unsigned int s, char c)
 {
 	if (s >= 0)
 	{
@@ -17,7 +17,7 @@ int main(void)
 	char	*r;
 	char	x;
 	x = 0;
-	r = ft_strmapi(s, ft_toupper4);
+	r = ft_strmapi(s, ft_toupper);
 	printf("%s", r);
 	return (0);
 }

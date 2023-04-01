@@ -10,9 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 /* DESCRIPCIÓN/
- * 
+ * La función strjoin() toma como argumentos dos strings s1 y s2.
  * VALOR DEVUELTO
- * 
+ * La concatenación de los dos strings.
  * */
 #include "libft.h"
 

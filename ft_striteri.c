@@ -10,10 +10,10 @@
 /*                                                                            */
 /* ************************************************************************** */
 /* DESCRIPCIÓN/
- * La función ft_striteri() 
- * 
+ * La función striteri() toma como argumentos un string de caracteres s y una
+ * funcion. Esta función toma como argumentos un int que equivale al indice del * string y el char equivale a el contenido del string en esa posicion concreta. * Esta función transforma de alguna manera caracter a caracter.
  * VALOR DEVUELTO
- *  */
+ * NADA */
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
