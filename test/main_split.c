@@ -1,16 +1,10 @@
 #include <stdio.h>
 #include <string.h>
-int ft_split(char const *s, char c);
 
-int main (void)
+
+int	ft_countwords(char const *s, char c);
+int main(void)
 {
-    /* char **subcadenas = ft_split("hola,mundo,como,estas", ',');
-    int i = 0;
-    while (subcadenas[i] != NULL) {
-        printf("Subcadena %d: %s\n", i, subcadenas[i]);
-        i++;
-    } */
-    int count = ft_split("hola,mundo,como,estas", ',');
-printf("%d", count);
-    return 0;
+	printf("%d\n", ft_countwords("p-que-666 -tal", '-'));
+/* 	printf("%s\n", **ft_split("---hola--que--tal", '-')); */
 }
