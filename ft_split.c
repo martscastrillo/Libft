@@ -11,64 +11,91 @@
 /* ************************************************************************** */
 /* DESCRIPCIÓN/
  * La función split() toma dos argunmentos, el string a separar s y el character
- * delimitador. La función va a separar en strings distintos cada bloque del  
+ * delimitador. La función va a separar en strings distintos cada bloque del
  * string que esté entre los delimitadores.
  * VALOR DEVUELTO
- * Devuelve un array de arrays, una matriz, con las strings resultantes de la 
+ * Devuelve un array de arrays, una matriz, con las strings resultantes de la
  * separación.
  * */
 
-#include"libft.h"
+#include "libft.h"
 
-int	ft_countwords(char const *s, char c)
+int ft_countwords(char const *s, char c)
 {
-	int	i;
-	int	counter;
-
+	int i;
+	int counter;
 	i = 0;
 	counter = 0;
 	while (s[i] != '\0')
 	{
-		if ((s[i] != c && s[i-1] == c) ||(s[i] != c && s[i] == s[0]))
+		if ((s[i] != c && s[i - 1] == c) || (s[i] != c && s[i] == s[0]))
 			counter++;
 		i++;
 	}
-	return(counter);
+	return (counter);
 }
-char  *ft_printarray(char const *s, char c)
+int ft_strlength(char const *s, char c)
 {
-
-    char  new[100];
-    int j;
-    int k;
-    k = 0;
-    j = 0;
-
-    printf("%c  \n", c);
-    printf("%s ", s);
-  while (s[j] != '\0')
-	{
-    
-             if (s[j] != c)
-            {
-                new[k] = 'm';
-                k++;
-            } 
-    	j++;  
-	}
- 
-    return (new);
+	int length;
+	length = 0;
+	while (s[length] != c)
+		length++;
+	return (length);
 }
-
+// en lugar de printarray ---> substring
+/* char *ft_printarray(char const *s, char c)
+{
+	char *new;
+	int j;
+	int k;
+	k = 0;
+	j = 0;
+	printf("%c  \n", c);
+	printf("%s \n", s);
+	while (s[j] != '\0')
+	{
+		if (s[j] != c)
+		{
+			new = malloc(sizeof(char) * (ft_strlength(&s[j], c) + 1));
+			k++;
+		}
+		j++;
+	}
+	return (new);
+}
+ */
 char **ft_split(char const *s, char c)
 {
-	char	**matrix;
+	char **matrix;
 	// porque ponemos un char si lo que devolvemos es un int
 	// necesitaos saber el numero de palabras para malloc
 	matrix = (char **)malloc(sizeof(char *) * (ft_countwords(s, c)) + 1);
-	printf("%d", ft_countwords(s, c));
 	if (matrix == NULL)
-        return(NULL);
-	return(matrix);
-}
+		return (NULL);
+	int p;
+	int	i;
+	p = 0;
+	i =  0;
+	int separator;
+	separator = 0;
+	while (p < ft_countwords(s, c))
+	{
+		if  (s[i] != c)
+		{	
+			matrix[p] = ft_substr(s, i, ft_strlength(&s[i],c));
+			i++;
+			printf("%s soy i\n", matrix[p]);
+		}
+		if(s[i] == c){
+			printf("puuta\n");
+			separator++;
+		}
+		p++;
+		i = separator;
+	
 
+	}
+
+	matrix[p] = 0;
+	return (matrix);
+}
