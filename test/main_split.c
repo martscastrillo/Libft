@@ -7,7 +7,7 @@ char **ft_split(char const *s, char c);
 int main(void)
 {
 	char **arrayresult;
-	arrayresult = ft_split("-hola--que--tal", '-');
+	arrayresult = ft_split("split  ||this|for|me|||||!|", '|');
 	int i = 0;
 	while (arrayresult[i] !='\0')
 	{
