@@ -10,29 +10,46 @@
 /*                                                                            */
 /* ************************************************************************** */
 /* DESCRIPCIÓN/
- * La función split() toma dos argunmentos, el string a separar s y el character * delimitador. La función va a separar en strings distintos cada bloque del  
+ * La función split() toma dos argunmentos, el string a separar s y el character
+ * delimitador. La función va a separar en strings distintos cada bloque del  
  * string que esté entre los delimitadores.
  * VALOR DEVUELTO
  * Devuelve un array de arrays, una matriz, con las strings resultantes de la 
  * separación.
  * */
-#include "libft.h"
-/* char **ft_split(char const *s, char c) */
-int ft_split(char const *s, char c)
+
+#include"libft.h"
+
+int	ft_countwords(char const *s, char c)
 {
- if (!s)
-		return (0);
-int i;
-int count;
-i = 0;
-count = 0;
-while (s[i] != '\0')
-{
-    if(s[i] == c)
-        count++;
-   i++;
+	int	i;
+	int	counter;
+
+	i = 0;
+	counter = 0;
+	while (s[i] != '\0')
+	{
+		if ((s[i] != c && s[i-1] == c) ||(s[i] != c && s[i] == s[0]))
+			counter++;
+		i++;
+	}
+	return(counter);
 }
 
- return(count+1);
-    
+char **ft_split(char const *s, char c)
+{
+	char	**matrix;
+	// porque ponemos un char si lo que devolvemos es un int
+	// necesitaos saber el numero de palabras para malloc
+	matrix = (char **)malloc(sizeof(char *) * (ft_countwords(s, c)) + 1);
+	//printf("%d", ft_countwords(s, c));
+	if (matrix == NULL)
+        return(NULL);
+	return(matrix);
+}
+
+int main(void)
+{
+	printf("%d\n", ft_countwords("p-que-666 -tal", '-'));
+/* 	printf("%s\n", **ft_split("---hola--que--tal", '-')); */
 }
