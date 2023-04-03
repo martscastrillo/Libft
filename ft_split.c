@@ -38,20 +38,20 @@ int	ft_countwords(char const *s, char c)
 char  *ft_printarray(char const *s, char c)
 {
 
-    char  *new;
+    char  new[100];
     int j;
     int k;
     k = 0;
     j = 0;
-    new = "";   
+
     printf("%c  \n", c);
     printf("%s ", s);
-  while (str[j] != '\0')
+  while (s[j] != '\0')
 	{
-         printf("%s ", s);
-             if (s[k] != c)
+    
+             if (s[j] != c)
             {
-                new[k] = 'h';
+                new[k] = 'm';
                 k++;
             } 
     	j++;  
