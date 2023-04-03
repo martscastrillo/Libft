@@ -35,6 +35,30 @@ int	ft_countwords(char const *s, char c)
 	}
 	return(counter);
 }
+char  *ft_printarray(char const *s, char c)
+{
+
+    char  *new;
+    int j;
+    int k;
+    k = 0;
+    j = 0;
+    new = "";   
+    printf("%c  \n", c);
+    printf("%s ", s);
+  while (str[j] != '\0')
+	{
+         printf("%s ", s);
+             if (s[k] != c)
+            {
+                new[k] = 'h';
+                k++;
+            } 
+    	j++;  
+	}
+ 
+    return (new);
+}
 
 char **ft_split(char const *s, char c)
 {
@@ -42,14 +66,9 @@ char **ft_split(char const *s, char c)
 	// porque ponemos un char si lo que devolvemos es un int
 	// necesitaos saber el numero de palabras para malloc
 	matrix = (char **)malloc(sizeof(char *) * (ft_countwords(s, c)) + 1);
-	//printf("%d", ft_countwords(s, c));
+	printf("%d", ft_countwords(s, c));
 	if (matrix == NULL)
         return(NULL);
 	return(matrix);
 }
 
-int main(void)
-{
-	printf("%d\n", ft_countwords("p-que-666 -tal", '-'));
-/* 	printf("%s\n", **ft_split("---hola--que--tal", '-')); */
-}
