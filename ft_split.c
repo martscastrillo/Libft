@@ -94,6 +94,7 @@ char **ft_split(char const *s, char c)
 
 	while (p < ft_countwords(s, c))
 	{
+	
 		if  (s[i] != c)
 		{	
 			matrix[p] = ft_substr(s, i, ft_strlength(&s[i],c));
@@ -105,6 +106,7 @@ char **ft_split(char const *s, char c)
 			i = i + ft_strlength(&s[i],c);
 			p++;		
 		}
+	
 			i++;
 	}
 
