@@ -6,7 +6,7 @@
 /*   By: martcast <martcast@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/27 19:34:36 by martcast          #+#    #+#             */
-/*   Updated: 2023/04/03 12:40:38 by martcast         ###   ########.fr       */
+/*   Updated: 2023/04/05 16:26:23 by martcast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /* DESCRIPCIÓN/
@@ -21,22 +21,22 @@ int	ft_extra( int n)
 	int	temp;
 
 	len = 0;
-	temp= n;
-	if (temp<= 0)
+	temp = n;
+	if (temp <= 0)
 	{
 		len ++;
-		temp= -temp;
+		temp = -temp;
 	}
-	while (temp!= 0)
+	while (temp != 0)
 	{
-		temp= temp/ 10;
-		len++;
+		temp = temp / 10;
+		len ++;
 	}
 	return (len);
 }
+
 char	*ft_numbers(int n, int len, char *str)
 {
-
 	if (n == 0)
 		str[0] = '0';
 	if (n < 0)
@@ -46,38 +46,26 @@ char	*ft_numbers(int n, int len, char *str)
 	}
 	while (n > 0)
 	{
-	
 			str[len--] = (n % 10) + 48;
 			n /= 10;
-		
 	}
-		/* while (n != 0)
-	{
-		str[len--] = (n % 10) + 48;
-		n = n / 10;
-	} */
 	return (str);
 }
-
 
 char	*ft_itoa(int n)
 {
 	char	*str;
 	int		len;
-	int temp;
+	int		temp;
+
 	len = ft_extra(n);
 	if (n == -2147483648)
-		return (ft_strdup("-2147483648"));
-	
-	str = malloc(sizeof(char) * (len + 1) );
+		return (ft_strdup ("-2147483648"));
+	str = malloc(sizeof(char) * (len + 1));
 	if (!str)
 		return (0);
-
-	
 	temp = n;
 	str[len--] = '\0';
 	str = ft_numbers(n, len, str);
-	
-	
 	return (str);
 }
