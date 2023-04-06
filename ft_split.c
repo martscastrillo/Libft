@@ -28,10 +28,15 @@ int ft_countwords(char const *s, char c)
 	counter = 0;
 	while (s[i] != '\0')
 	{
-		if ((s[i] != c && s[i - 1] == c) || (s[i] != c && s[i] == s[0]))
+		/* if ((s[i] != c && s[i - 1] == c (|| s[0] == c)) || (s[i] != c && s[i+1] =='\0')) */
+
+		if(s[i+1] == c && s[i]!=c)
+			counter++;
+		if(s[i+1] == '\0' && s[i]!=c)
 			counter++;
 		i++;
 	}
+
 	return (counter);
 }
 int ft_strlength(char const *s, char c)
@@ -80,11 +85,8 @@ char **ft_split(char const *s, char c)
 	char **matrix;
 		if (!s)
 		return (NULL);
-		
-	// porque ponemos un char si lo que devolvemos es un int
-	// necesitaos saber el numero de palabras para malloc
 	matrix = (char **)malloc(sizeof(char *) * (ft_countwords(s, c)) + 1);
-
+	
 	if (matrix == NULL)
 		return (NULL);
 	int p;
@@ -98,19 +100,21 @@ char **ft_split(char const *s, char c)
 		if  (s[i] != c)
 		{	
 			matrix[p] = ft_substr(s, i, ft_strlength(&s[i],c));
+		
 			if (matrix[p] == NULL)
 					{
 						ft_free(matrix, p);
 						return (NULL);
 					}
 			i = i + ft_strlength(&s[i],c);
+			
 			p++;		
 		}
 	
 			i++;
 	}
-
-
+	
+	
 	matrix[p] = 0;
 	return (matrix);
 }
