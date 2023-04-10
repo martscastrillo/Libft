@@ -55,12 +55,14 @@ char **ft_split(char const *s, char c)
 	char **matrix;
 	int p;
 	int i;
+	int len;
+
 	p = 0;
 	i = 0;
 	if (!s)
 		return (NULL);
-	matrix = malloc(sizeof(char *) * (ft_countwords(s, c)) + 1);
-
+	len = ft_countwords(s, c);
+	matrix = malloc(sizeof(char *) * (len + 1));
 	if (matrix == NULL)
 		return (NULL);
 	if (ft_countwords(s, c) == 0)
