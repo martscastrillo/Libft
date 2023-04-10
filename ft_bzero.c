@@ -13,16 +13,15 @@
  * La función bzero() toma como argumentos un string, y una longitud n.
  * Rellena los n primeros bytes del area de s con '\0'
  * VALOR DEVUELTO
- * La función bzero() devuelve un puntero al área de memoria s.
- * El string modificado*/
+ * No devuelve nada */
 #include "libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {
-	unsigned char	*str;
+	char	*str;
 	size_t			i;
 
-	str = (unsigned char *)s;
+	str = s;
 	i = 0;
 	while (i < n)
 	{

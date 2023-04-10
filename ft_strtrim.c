@@ -10,7 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 /* DESCRIPCIÓN/
- * La función strtrim() toma como argumentos dos strings, por un lado s1 que es * la string que debe ser cortada y por otro lado set, donde aparecen los
+ * La función strtrim() toma como argumentos dos strings, por un lado s1 que es
+ * la string que debe ser cortada y por otro lado set, donde aparecen los
  * caracteres a eliminar de ese string. Elimina todos los caracteres que 
  * aparecen en set desde el principio hasta el final, hasta encontrar un
  * caracter no perteneciente a set.

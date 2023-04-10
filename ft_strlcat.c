@@ -33,11 +33,12 @@ size_t	ft_strlcat(char *dst,
 	d_len = ft_strlen(dst);
 	i = d_len;
 	if (dstsize <= d_len)
-		return (ft_strlen(src) + dstsize);
-	while (i < dstsize - 1 && *src)
+		return (s_len + dstsize);
+	while (i < (dstsize - 1) && *src)
 	{
-		dst[i++] = *src;
+		dst[i] = *src;
 		src++;
+		i++;
 	}
 	dst[i] = '\0';
 	return (d_len + s_len);
