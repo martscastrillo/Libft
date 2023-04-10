@@ -6,7 +6,7 @@
 /*   By: martcast <martcast@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/29 20:02:28 by martcast          #+#    #+#             */
-/*   Updated: 2023/03/29 20:04:19 by martcast         ###   ########.fr       */
+/*   Updated: 2023/04/10 17:43:01 by martcast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /* DESCRIPCIÓN/
@@ -20,10 +20,10 @@
 
 #include "libft.h"
 
-int ft_countwords(char const *s, char c)
+int	ft_count(char const *s, char c)
 {
-	int i;
-	int count;
+	int	i;
+	int	count;
 
 	i = 0;
 	count = 0;
@@ -40,62 +40,54 @@ int ft_countwords(char const *s, char c)
 	}
 	return (count);
 }
-int ft_strlength(char const *s, char c)
-{
-	int length;
-	length = 0;
-	while (s[length] != c && s[length] != '\0')
-		length++;
 
-	return (length);
+int	ft_len(char const *s, char c, int i)
+{
+	int	j;
+
+	j = 0;
+	while (s[i] != c && s[i] != '\0')
+	{
+		j++;
+		i++;
+	}
+	return (j);
 }
 
-char **ft_split(char const *s, char c)
+char	**ft_free(char **str, int j)
 {
-	char **matrix;
-	int p;
-	int i;
-	int len;
+	while (0 < j)
+	{	
+		free(str++);
+	}
+	return (0);
+}
 
-	p = 0;
+char	**ft_split(char const *s, char c)
+{
+	char	**str;
+	int		i;
+	int		j;
+
 	i = 0;
+	j = 0;
 	if (!s)
-		return (NULL);
-	len = ft_countwords(s, c);
-	matrix = malloc(sizeof(char *) * (len + 1));
-	if (matrix == NULL)
-		return (NULL);
-	if (ft_countwords(s, c) == 0)
+		return (0);
+	str = malloc(sizeof(char *) * ((ft_count(s, c)) + 1));
+	if (!str)
+		return (0);
+	while (j < (ft_count(s, c)))
 	{
-		matrix[p] = 0;
-		free(matrix[p]);
-		return (matrix);
-	}
-	
-	while (p < ft_countwords(s, c))
-	{
-		if (s[i] != c)
-	{
-		matrix[p] =ft_strdup(s);
-		free(matrix[p]);
-		return (matrix);
-	}
 		while (s[i] == c)
-		{
 			i++;
-		}
-		matrix[p] = ft_substr(s, i, ft_strlength(&s[i], c));
-		i = i + ft_strlength(&s[i], c);
-		if (matrix[p] == NULL)
+		str[j] = ft_substr(s, i, ft_len(s, c, i));
+		i = i + ft_len(s, c, i);
+		if (!*str)
 		{
-			while (p-- > 0)
-				free(matrix[p]);
-			free(matrix);
-			return (NULL);
+			return (ft_free(str, j));
 		}
-		p++;
+		j++;
 	}
-
-	matrix[p] = 0;
-	return (matrix);
+	str[j] = 0;
+	return (str);
 }
