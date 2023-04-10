@@ -22,6 +22,6 @@ t_list *ft_lstlast(t_list *lst)
   p = lst;
   while (p->next != NULL)
     p = p->next;
-  p->next = q;
+    p->next = q;
   return lst;
 }
