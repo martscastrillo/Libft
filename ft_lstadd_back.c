@@ -1,24 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstsize.c                                       :+:      :+:    :+:   */
+/*   ft_lstadd_back.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: martcast <martcast@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/10 19:36:26 by martcast          #+#    #+#             */
-/*   Updated: 2023/04/10 20:38:52 by martcast         ###   ########.fr       */
+/*   Created: 2023/04/12 15:39:17 by martcast          #+#    #+#             */
+/*   Updated: 2023/04/12 15:39:50 by martcast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "libft.h"
-int ft_lstsize(t_list *lst)
+/* si no encuentra tmp el primer elementoo es el ultimo, por lo tanto añade despues de ese ---    *lst = new;
+ */#include "libft.h"
+void ft_lstadd_back(t_list **lst, t_list *new)
 {
-	 struct s_list *p;
-  int n;
-  n = 0;
-  p = lst;
-  while (p != NULL) {
-    ++n;
-    p = p->next;
-  }
-  return n;
+    t_list *tmp;
+    if (!lst || !new)
+        return;
+    tmp = ft_lstlast(*lst);
+    if (tmp)
+              tmp->next = new;
+
+    else
+    {
+        *lst = new;
+    }
+    return;
 }

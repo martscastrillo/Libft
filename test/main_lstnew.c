@@ -2,8 +2,9 @@
 #include <string.h> 
 t_list	*ft_lstnew(void *content);
 	
-int main (void)
+int main(void)
 {
-ft_lstnew
-   return 0;
+	t_list *ptr;
+	ptr = ft_lstnew("hola");
+	printf("%s", ptr->content);
 }

@@ -12,16 +12,9 @@
 #include "libft.h"
 t_list *ft_lstlast(t_list *lst)
 {
-    struct s_list *p,*q;
-  q = creanodo(); /* crea un nuevo nodo */
-  q->content = x; /* copiar los datos */
-  q->next = NULL;
-/*   if (lst == NULL)
-    return q; */
-  /* la lista argumento no es vacía. Situarse en el último */
-  p = lst;
-  while (p->next != NULL)
-    p = p->next;
-    p->next = q;
-  return lst;
+  if (!lst)
+    return (NULL);
+  while (lst->next)
+    lst = lst->next;
+  return (lst);
 }
