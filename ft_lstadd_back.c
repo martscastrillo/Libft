@@ -9,8 +9,15 @@
 /*   Updated: 2023/04/12 15:39:50 by martcast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-/* si no encuentra tmp el primer elementoo es el ultimo, por lo tanto añade despues de ese ---    *lst = new;
- */#include "libft.h"
+/* DESCRIPCIÓN/
+ * Añade el nodo ’new’ al final de la lista ’lst’.
+ * lst: el puntero al primer nodo de una lista. 
+ * new: el puntero a un nodo que añadir a la lista.
+ * si no encuentra tmp el primer elementoo es el ultimo,
+ * por lo tanto añade despues de ese ---    *lst = new;
+ * VALOR DEVUELTO
+ * NADA*/
+#include "libft.h"
 void ft_lstadd_back(t_list **lst, t_list *new)
 {
     t_list *tmp;

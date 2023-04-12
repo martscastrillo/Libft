@@ -1,29 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstnew.c                                        :+:      :+:    :+:   */
+/*   ft_lstdelone.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: martcast <martcast@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/10 18:05:10 by martcast          #+#    #+#             */
-/*   Updated: 2023/04/10 18:05:13 by martcast         ###   ########.fr       */
+/*   Created: 2023/04/12 16:19:41 by martcast          #+#    #+#             */
+/*   Updated: 2023/04/12 16:19:45 by martcast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /* DESCRIPCIÓN/
- * Crea un nuevo nodo utilizando malloc(3). La variable miembro ’content’
- * se inicializa con el contenido del parámetro ’content’.
- * content: el contenido con el que crear el nodo.
+ * Toma como parámetro un nodo ’lst’ y libera la memoria del contenido
+ * utilizando la función ’del’ dada como parámetro, además de libera
+ * el nodo. La memoria de ’next’ no debe liberarse.
+ * lst: el nodo a liberar.
+ * del: un puntero a la función utilizada para liberar
+ * el contenido del nodo.
  * VALOR DEVUELTO
- * El nuevo nodo.*/
-#include "libft.h"
-t_list *ft_lstnew(void *content)
+ * NADA*/
+void ft_lstdelone(t_list *lst, void (*del)(void *))
 {
-    t_list *tmp;
 
-    tmp = malloc(sizeof(t_list));
-    if(!tmp)
-        return (NULL);
-     tmp->content = content;
-        tmp->next = NULL;
-    return (tmp);
 }

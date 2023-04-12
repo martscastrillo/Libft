@@ -9,6 +9,11 @@
 /*   Updated: 2023/04/10 20:38:52 by martcast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+/* DESCRIPCIÓN/
+ * Cuenta el número de nodos de una lista.
+ * lst: el principio de la lista.
+ * VALOR DEVUELTO
+ * La longitud de la lista.*/
 #include "libft.h"
 int ft_lstsize(t_list *lst)
 {

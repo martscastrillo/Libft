@@ -9,6 +9,10 @@
 /*   Updated: 2023/04/10 20:39:23 by martcast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+/* DESCRIPCIÓN/
+ * Devuelve el último nodo de la lista. lst: el principio de la lista.
+ * VALOR DEVUELTO
+ * Último nodo de la lista.*/
 #include "libft.h"
 t_list *ft_lstlast(t_list *lst)
 {

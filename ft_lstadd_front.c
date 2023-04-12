@@ -9,8 +9,13 @@
 /*   Updated: 2023/04/10 18:29:23 by martcast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-/* lst: la dirección de un puntero al primer nodo de una lista.
-new: un puntero al nodo que añadir al principio de la lista. */
+/* DESCRIPCIÓN
+ * Añade el nodo ’new’ al principio de la lista ’lst’.
+ * lst: la dirección de un puntero al primer nodo de una lista.
+ * new: un puntero al nodo que añadir al principio de la lista.
+ * VALOR DEVUELTO
+ * NADA*/
+
 #include "libft.h"
 
 void ft_lstadd_front(t_list **lst, t_list *new)
