@@ -428,9 +428,22 @@ Este proyecto es el primero de los proyectos de 42 Madrid.
 
 - NADA
 
+
+### ft_lstadd_front
+
+##### Prototipo - `void ft_lstadd_front(t_list **lst, t_list *new)`
+
+##### Descripción
+
+-  Añade el nodo ’new’ al principio de la lista ’lst’. lst: la dirección de un puntero al primer nodo de una lista. new: un puntero al nodo que añadir al principio de la lista.
+
+##### Valor devuelto
+
+- NADA. 
+
 ### ft_
 
-##### Prototipo - `dfasghed`
+##### Prototipo - `void ft_lstclear(t_list **lst, void (*del)(void *))`
 
 ##### Descripción
 
@@ -441,7 +454,7 @@ Este proyecto es el primero de los proyectos de 42 Madrid.
 - 
 ### ft_
 
-##### Prototipo - `dfasghed`
+##### Prototipo - `void ft_lstdelone(t_list *lst, void (*del)(void *))`
 
 ##### Descripción
 
@@ -452,7 +465,7 @@ Este proyecto es el primero de los proyectos de 42 Madrid.
 - 
 ### ft_
 
-##### Prototipo - `dfasghed`
+##### Prototipo - `void ft_lstiter(t_list *lst, void (*f)(void *))`
 
 ##### Descripción
 
@@ -463,7 +476,7 @@ Este proyecto es el primero de los proyectos de 42 Madrid.
 - 
 ### ft_
 
-##### Prototipo - `dfasghed`
+##### Prototipo - `t_list *ft_lstlast(t_list *lst)`
 
 ##### Descripción
 
@@ -474,7 +487,7 @@ Este proyecto es el primero de los proyectos de 42 Madrid.
 - 
 ### ft_
 
-##### Prototipo - `dfasghed`
+##### Prototipo - `t_list *ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))`
 
 ##### Descripción
 
@@ -485,7 +498,7 @@ Este proyecto es el primero de los proyectos de 42 Madrid.
 - 
 ### ft_
 
-##### Prototipo - `dfasghed`
+##### Prototipo - `t_list *ft_lstnew(void *content)`
 
 ##### Descripción
 
@@ -496,18 +509,7 @@ Este proyecto es el primero de los proyectos de 42 Madrid.
 - 
 ### ft_
 
-##### Prototipo - `dfasghed`
-
-##### Descripción
-
-- 
-
-##### Valor devuelto
-
-- 
-### ft_
-
-##### Prototipo - `dfasghed`
+##### Prototipo - `int ft_lstsize(t_list *lst)`
 
 ##### Descripción
 
