@@ -428,7 +428,6 @@ Este proyecto es el primero de los proyectos de 42 Madrid.
 
 - NADA
 
-
 ### ft_lstadd_front
 
 ##### Prototipo - `void ft_lstadd_front(t_list **lst, t_list *new)`
@@ -441,7 +440,7 @@ Este proyecto es el primero de los proyectos de 42 Madrid.
 
 - NADA. 
 
-### ft_
+### ft_lstclear
 
 ##### Prototipo - `void ft_lstclear(t_list **lst, void (*del)(void *))`
 
@@ -451,41 +450,45 @@ Este proyecto es el primero de los proyectos de 42 Madrid.
 
 ##### Valor devuelto
 
-- 
-### ft_
+- NADA
+
+### ft_lstdelone
 
 ##### Prototipo - `void ft_lstdelone(t_list *lst, void (*del)(void *))`
 
 ##### Descripción
 
-- 
+- Toma como parámetro un nodo ’lst’ y libera la memoria del contenido utilizando la función ’del’ dada como parámetro, además de libera el nodo. La memoria de ’next’ no debe liberarse. lst: el nodo a liberar. del: un puntero a la función utilizada para liberar el contenido del nodo.
 
 ##### Valor devuelto
 
-- 
-### ft_
+- NADA
+
+### ft_lstiter
 
 ##### Prototipo - `void ft_lstiter(t_list *lst, void (*f)(void *))`
 
 ##### Descripción
 
-- 
+- NADA
 
 ##### Valor devuelto
 
-- 
-### ft_
+- NADA
+
+### ft_lstlast
 
 ##### Prototipo - `t_list *ft_lstlast(t_list *lst)`
 
 ##### Descripción
 
-- 
+-  Devuelve el último nodo de la lista. lst: el principio de la lista.
 
 ##### Valor devuelto
 
-- 
-### ft_
+- Último nodo de la lista.
+
+### ft_lstmap
 
 ##### Prototipo - `t_list *ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))`
 
@@ -496,25 +499,27 @@ Este proyecto es el primero de los proyectos de 42 Madrid.
 ##### Valor devuelto
 
 - 
-### ft_
+
+### ft_lstnew
 
 ##### Prototipo - `t_list *ft_lstnew(void *content)`
 
 ##### Descripción
 
-- 
+- Crea un nuevo nodo utilizando malloc(3). La variable miembro ’content’ se inicializa con el contenido del parámetro ’content’. content: el contenido con el que crear el nodo.
 
 ##### Valor devuelto
 
-- 
-### ft_
+- El nuevo nodo.
+
+### ft_lstsize
 
 ##### Prototipo - `int ft_lstsize(t_list *lst)`
 
 ##### Descripción
 
-- 
+- Cuenta el número de nodos de una lista. lst: el principio de la lista.
 
 ##### Valor devuelto
 
-- 
+- La longitud de la lista.
