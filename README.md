@@ -412,3 +412,107 @@ Este proyecto es el primero de los proyectos de 42 Madrid.
 ##### Valor devuelto
 
 - Devuelve el entero restandole las 32 posiciones que hacen que pase de minuscula a mayuscula.
+
+
+## BONUS
+
+### ft_lstadd_back
+
+##### Prototipo - `void ft_lstadd_back(t_list **lst, t_list *new)`
+
+##### Descripción
+
+- Añade el nodo ’new’ al final de la lista ’lst’. lst: el puntero al primer nodo de una lista. new: el puntero a un nodo que añadir a la lista. si no encuentra tmp el primer elementoo es el ultimo, por lo tanto añade despues de ese ---    *lst = new;
+
+##### Valor devuelto
+
+- NADA
+
+### ft_
+
+##### Prototipo - `dfasghed`
+
+##### Descripción
+
+- 
+
+##### Valor devuelto
+
+- 
+### ft_
+
+##### Prototipo - `dfasghed`
+
+##### Descripción
+
+- 
+
+##### Valor devuelto
+
+- 
+### ft_
+
+##### Prototipo - `dfasghed`
+
+##### Descripción
+
+- 
+
+##### Valor devuelto
+
+- 
+### ft_
+
+##### Prototipo - `dfasghed`
+
+##### Descripción
+
+- 
+
+##### Valor devuelto
+
+- 
+### ft_
+
+##### Prototipo - `dfasghed`
+
+##### Descripción
+
+- 
+
+##### Valor devuelto
+
+- 
+### ft_
+
+##### Prototipo - `dfasghed`
+
+##### Descripción
+
+- 
+
+##### Valor devuelto
+
+- 
+### ft_
+
+##### Prototipo - `dfasghed`
+
+##### Descripción
+
+- 
+
+##### Valor devuelto
+
+- 
+### ft_
+
+##### Prototipo - `dfasghed`
+
+##### Descripción
+
+- 
+
+##### Valor devuelto
+
+- 
