@@ -1,13 +1,4 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_lstdelone.c                                     :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: martcast <martcast@student.42madrid>       +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/12 16:19:41 by martcast          #+#    #+#             */
-/*   Updated: 2023/04/12 16:19:45 by martcast         ###   ########.fr       */
-/*                                                                            */
+
 /* ************************************************************************** */
 /* DESCRIPCIÓN/
  * Toma como parámetro un nodo ’lst’ y libera la memoria del contenido
@@ -20,5 +11,7 @@
  * NADA*/
 void ft_lstdelone(t_list *lst, void (*del)(void *))
 {
-
+    del(lst->content);
+	free(lst);
+	lst = NULL;
 }
