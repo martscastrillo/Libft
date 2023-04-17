@@ -470,7 +470,7 @@ Este proyecto es el primero de los proyectos de 42 Madrid.
 
 ##### Descripción
 
-- NADA
+- Itera la lista ’lst’ y aplica la función ’f’ en el contenido de cada nodo. lst: un puntero al primer nodo. f: un puntero a la función que utilizará cada nodo.
 
 ##### Valor devuelto
 
@@ -494,11 +494,11 @@ Este proyecto es el primero de los proyectos de 42 Madrid.
 
 ##### Descripción
 
-- 
+- Itera la lista ’lst’ y aplica la función ’f’ al contenido de cada nodo. Crea una lista resultante de la aplicación correcta y sucesiva de la función ’f’ sobre cada nodo. La función ’del’ se utiliza para eliminar el contenido de un nodo, si hace falta.
 
 ##### Valor devuelto
 
-- 
+- La nueva lista. NULL si falla la reserva de memoria.
 
 ### ft_lstnew
 

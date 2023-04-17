@@ -15,11 +15,20 @@
  * lst: la dirección de un puntero a un nodo.
  * del: un puntero a función utilizado para eliminar el contenido de un nodo.
  * VALOR DEVUELTO
- * NADA*/
+ * NADA
+ * ***********
+ * (*lst != NULL) (*lst)*/
 
  #include "libft.h"
 void ft_lstclear(t_list **lst, void (*del)(void *))
 {
-   
-  
+   t_list *tmp;
+    if(lst != NULL){
+        while(*lst != NULL){
+            tmp = (*lst)->next;
+            ft_lstdelone(*lst, del);
+            *lst = tmp;
+        }
+    }
 } 
+ 
