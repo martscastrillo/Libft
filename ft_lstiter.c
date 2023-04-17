@@ -6,7 +6,7 @@
 /*   By: martcast <martcast@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/12 18:16:45 by martcast          #+#    #+#             */
-/*   Updated: 2023/04/12 18:17:17 by martcast         ###   ########.fr       */
+/*   Updated: 2023/04/17 17:13:16 by martcast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /* DESCRIPCIÓN/
@@ -18,9 +18,9 @@
 
 #include "libft.h"
 
-void ft_lstiter(t_list *lst, void (*f)(void *))
+void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-	while(lst != NULL)
+	while (lst != NULL)
 	{
 		f(lst->content);
 		lst = lst->next;

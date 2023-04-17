@@ -6,7 +6,7 @@
 /*   By: martcast <martcast@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/12 18:27:18 by martcast          #+#    #+#             */
-/*   Updated: 2023/04/12 18:27:22 by martcast         ###   ########.fr       */
+/*   Updated: 2023/04/17 17:16:44 by martcast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /* DESCRIPCIÓN
@@ -19,16 +19,19 @@
  * ***********
  * (*lst != NULL) (*lst)*/
 
- #include "libft.h"
-void ft_lstclear(t_list **lst, void (*del)(void *))
+#include "libft.h"
+
+void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
-   t_list *tmp;
-    if(lst != NULL){
-        while(*lst != NULL){
-            tmp = (*lst)->next;
-            ft_lstdelone(*lst, del);
-            *lst = tmp;
-        }
-    }
-} 
- 
+	t_list	*tmp;
+
+	if (lst != NULL)
+	{
+		while (*lst != NULL)
+		{
+			tmp = (*lst)->next;
+			ft_lstdelone (*lst, del);
+			*lst = tmp;
+		}
+	}
+}
