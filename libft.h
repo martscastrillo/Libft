@@ -6,7 +6,7 @@
 /*   By: martcast <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/08 11:22:49 by martcast          #+#    #+#             */
-/*   Updated: 2023/03/08 11:29:12 by martcast         ###   ########.fr       */
+/*   Updated: 2023/04/17 17:35:00 by martcast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,13 +16,13 @@
 # include <string.h>
 # include <stdio.h>
 # include <unistd.h> 
-# include <stdlib.h> 
+# include <stdlib.h>
 
-typedef struct		s_list
+typedef struct s_list
 {
 	void			*content;
 	struct s_list	*next;
-}	 				t_list;
+}					t_list;
 
 int		ft_atoi(const char *str);
 void	ft_bzero(void *s, size_t n);
@@ -67,6 +67,5 @@ char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strtrim(char const *s1, char const *set);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
-
 
 #endif
