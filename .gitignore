@@ -3,6 +3,7 @@
 *.out
 *.a
 *.swp
+.vscode
 .DS_Store
 /libft-unit-test
 /valgrind_42
