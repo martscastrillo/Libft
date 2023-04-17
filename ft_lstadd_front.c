@@ -6,7 +6,7 @@
 /*   By: martcast <martcast@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/10 18:29:20 by martcast          #+#    #+#             */
-/*   Updated: 2023/04/10 18:29:23 by martcast         ###   ########.fr       */
+/*   Updated: 2023/04/12 18:15:40 by martcast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /* DESCRIPCIÓN
@@ -18,11 +18,11 @@
 
 #include "libft.h"
 
-void ft_lstadd_front(t_list **lst, t_list *new)
+void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-    if (!lst || !new)
+	if (!lst || !new)
 		return ;
 	new->next = *lst;
 	*lst = new;
-    return ;
+	return ;
 }

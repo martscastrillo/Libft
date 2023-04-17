@@ -6,7 +6,7 @@
 /*   By: martcast <martcast@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/12 16:19:41 by martcast          #+#    #+#             */
-/*   Updated: 2023/04/12 16:19:45 by martcast         ###   ########.fr       */
+/*   Updated: 2023/04/12 18:16:33 by martcast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /* DESCRIPCIÓN/
@@ -18,7 +18,14 @@
  * el contenido del nodo.
  * VALOR DEVUELTO
  * NADA*/
-void ft_lstdelone(t_list *lst, void (*del)(void *))
-{
+#include "libft.h"
 
+void	ft_lstdelone(t_list *lst, void (*del)(void *))
+{
+	if (lst == NULL || del == NULL)
+		return ;
+	if (lst->content != NULL)
+		del(lst->content);
+	free(lst);
+	return ;
 }
