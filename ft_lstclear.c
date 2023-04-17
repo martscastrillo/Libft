@@ -17,18 +17,9 @@
  * VALOR DEVUELTO
  * NADA*/
 
-#include "libft.h"
+ #include "libft.h"
 void ft_lstclear(t_list **lst, void (*del)(void *))
 {
    
-   	t_list	*tmp;
-
-    if (!lst || !*lst)
-        return ;
-    while (*lst != NULL)
-    {
-        tmp->next = new;
-        ft_lstdelone((*lst), del);
-        *lst = NULL;
-    } 
+  
 } 
