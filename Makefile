@@ -41,21 +41,7 @@ clean:
 	@echo OK
 
 fclean: clean 
-	@echo ${TEST_FILE} borrados
-	@rm -f ${TEST_FILE}
+	@echo ${NAME} borrado
 	@rm -f ${NAME}
 
 re : fclean all
-# TESTS
-
-TEST_FILE = tests
-
-TEST_SRC = test/main_isalnum.c main_isalpha.c main_isascii.c main_isdigit.c main_isprint.c main_strlen.c 
-TEST_OBJ = ${TEST_SRC:%.c=%.o}
-
-run: ${TEST_FILE}
-	./${TEST_FILE}
-
-${TEST_FILE}: ${TEST_OBJ} ${NAME}
-	${COMPILE} ${TEST_OBJ} ${NAME} -o ${TEST_FILE}
-
