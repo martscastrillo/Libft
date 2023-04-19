@@ -18,13 +18,15 @@
 
 int	ft_lstsize(t_list *lst)
 {
+	struct s_list	*p;
 	int				len;
 
 	len = 0;
-	while (lst != NULL)
+	p = lst;
+	while (p != NULL)
 	{
 		len++;
-		lst = lst->next;
+		p = p->next;
 	}
 	return (len);
 }
