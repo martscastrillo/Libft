@@ -1,23 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: martcast <martcast@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/03/15 10:13:09 by martcast          #+#    #+#             */
-/*   Updated: 2023/03/15 10:13:33 by martcast         ###   ########.fr       */
+/*   Created: 2023/03/09 12:00:40 by martcast          #+#    #+#             */
+/*   Updated: 2023/03/15 10:11:08 by martcast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-/* DESCRIPCIÓN/
- * La función isalpha() toma un único argumento en forma de número entero.
+/* DESCRIPCIÓN
+ * La función isdigit() toma un único argumento en forma de número entero.
  * VALOR DEVUELTO
- * Devuelve 0 si no es parte del alfabeto y devuelve 1 si lo es.*/
-#include "libft.h"
+ * Devuelve 0 si no es número y devuelve 1 si lo es.*/
+/* #include "libft.h" */
 
-int	ft_isalpha(int c)
+int	ft_isdigit(int c)
 {
-	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
+	if (c >= 48 && c <= 57)
 		return (1);
 	return (0);
 }

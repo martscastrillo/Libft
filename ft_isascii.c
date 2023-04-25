@@ -1,24 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: martcast <martcast@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/03/09 11:52:12 by martcast          #+#    #+#             */
-/*   Updated: 2023/03/15 10:15:20 by martcast         ###   ########.fr       */
+/*   Created: 2023/03/15 09:50:06 by martcast          #+#    #+#             */
+/*   Updated: 2023/03/15 10:16:49 by martcast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-/* DESCRIPCIÓN/
- * La función isalnum() toma un único argumento en forma de número entero.
+/* DESCRIPCIÓN
+ * La función isascii() toma un único argumento en forma de número entero.
  * VALOR DEVUELTO
- * Devuelve 0 si no es parte del alfabeto o está dentro de los numeos
- * y devuelve 1 si lo está.*/
-#include "libft.h"
+ * Devuelve 0 si no pertenece a la tabla ascii y devuelve 1 si si pertenece.*/
+/* #include "libft.h" */
 
-int	ft_isalnum(int c)
+int	ft_isascii(int c)
 {
-	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122) || (c >= 48 && c <= 57))
+	if (c >= 0 && c <= 127)
 		return (1);
 	return (0);
 }

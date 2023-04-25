@@ -13,7 +13,7 @@
  * La función isprint() toma un único argumento en forma de número entero.
  * VALOR DEVUELTO
  * Devuelve 0 si no es un valor printable y devuelve 1 si lo es.*/
-#include "libft.h"
+/* #include "libft.h" */
 
 int	ft_isprint(int c)
 {
